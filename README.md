@@ -1,10 +1,10 @@
-# Web Studio — Premium Landing
+# AUREA Studio — Premium Landing
 
-Преміальний лендинг веб-студії у стилі SaaS (Stripe / Linear / Framer).
+Преміальний лендинг веб-студії AUREA Studio.
 
 ## Стек
 
-- React 19 · Vite 6 · Tailwind CSS 4 · Lucide React · React Router
+React 19 · Vite 6 · Tailwind CSS 4 · Lucide React · React Router
 
 ## Запуск
 
@@ -13,9 +13,11 @@ npm install
 npm run dev
 ```
 
-- **/** — головна: hero з 3D mockup ноутбука та телефону, переваги, типи сайтів, аудиторія
-- **/spivpratsia** — модель співпраці, пакет, процес, FAQ, CTA
+## Сторінки
 
-## Mockup-пристрої
+- **/** — Hero, довіра, переваги, роботи, відгуки, гарантії, контакти
+- **/spivpratsia** — як це працює, формати, ціни, процес, FAQ, контакти
 
-Компоненти `LaptopMockup`, `PhoneMockup` та `SitePreview` — чистий HTML/CSS з паралаксом при наведенні.
+## Конфіг
+
+Контакти та бренд: `src/config/site.js`

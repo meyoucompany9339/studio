@@ -26,7 +26,7 @@ const faqItems = [
 
 export default function FAQSection() {
   return (
-    <section className="py-7 sm:py-8 bg-surface-elevated">
+    <section id="faq" className="section-py scroll-mt-24 bg-surface-elevated">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading badge="FAQ" title="Часті запитання" />
         <div className="glass-strong mx-auto max-w-3xl rounded-3xl px-6 sm:px-10">

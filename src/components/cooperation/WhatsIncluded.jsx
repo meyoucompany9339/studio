@@ -21,7 +21,7 @@ const items = [
 
 export default function WhatsIncluded() {
   return (
-    <section className="relative py-7 sm:py-8 bg-surface-elevated">
+    <section className="section-py relative bg-surface-elevated">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Пакет"

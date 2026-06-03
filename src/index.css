@@ -30,6 +30,15 @@ body {
   color: #fff;
 }
 
+.logo-wordmark {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 0.28em;
+}
+
+.logo-sub {
+  font-family: var(--font-sans);
+}
+
 .gradient-text {
   background: linear-gradient(135deg, #ffb347 0%, #ff8c00 45%, #ffb347 100%);
   -webkit-background-clip: text;
@@ -97,6 +106,18 @@ body {
   background-size: 72px 72px;
 }
 
+.section-py {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .section-py {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
 .device-scene {
   transform-style: preserve-3d;
 }
@@ -141,11 +162,49 @@ body {
 
 .laptop-backlight-core {
   background: radial-gradient(
-    ellipse 75% 55% at 42% 48%,
-    rgb(255 140 0 / 0.45) 0%,
-    rgb(255 179 71 / 0.2) 35%,
+    ellipse 80% 60% at 50% 45%,
+    rgb(255 140 0 / 0.55) 0%,
+    rgb(255 179 71 / 0.28) 30%,
     transparent 68%
   );
+}
+
+.hero-device-img {
+  filter: drop-shadow(0 24px 48px rgb(0 0 0 / 0.45));
+}
+
+.light-streak-hero-1 {
+  top: 26%;
+  left: -12%;
+  width: 110%;
+  height: 4px;
+  opacity: 1;
+}
+
+.light-streak-hero-2 {
+  top: 36%;
+  left: -6%;
+  width: 105%;
+  height: 2px;
+  opacity: 0.9;
+  animation: streak-shift 8s ease-in-out infinite;
+}
+
+.light-streak-hero-3 {
+  top: 44%;
+  left: 0;
+  width: 98%;
+  height: 2px;
+  opacity: 0.7;
+  animation: streak-shift 10s ease-in-out 1s infinite reverse;
+}
+
+.light-streak-hero-4 {
+  top: 52%;
+  left: 6%;
+  width: 88%;
+  height: 1px;
+  opacity: 0.5;
 }
 
 /* Horizontal light rays behind devices */

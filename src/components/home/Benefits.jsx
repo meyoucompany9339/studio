@@ -6,59 +6,58 @@ import {
   ShieldCheck,
   Headphones,
 } from 'lucide-react'
-import Badge from '../ui/Badge'
+import SectionHeading from '../ui/SectionHeading'
 
 const benefits = [
   {
     icon: Zap,
     title: 'Швидкий запуск',
-    description: 'Сайт готовий за 2–4 тижні',
+    description: 'Сайт готовий за 2–4 тижні з чітким таймлайном',
   },
   {
     icon: Pencil,
     title: 'Індивідуальний дизайн',
-    description: 'Унікальний дизайн під ваш бренд',
+    description: 'Унікальний візуал під ваш бренд, без шаблонів',
   },
   {
     icon: Smartphone,
     title: 'Адаптивність',
-    description: 'Ідеально на всіх пристроях',
+    description: 'Бездоганний вигляд на телефоні та десктопі',
   },
   {
     icon: Search,
     title: 'SEO оптимізація',
-    description: 'Підготовка до пошукових систем',
+    description: 'Підготовка до пошукових систем з першого дня',
   },
   {
     icon: ShieldCheck,
     title: 'Без ризику',
-    description: 'Ви платите тільки після запуску',
+    description: 'Оплата лише після запуску готового сайту',
   },
   {
     icon: Headphones,
     title: 'Підтримка',
-    description: 'Технічна підтримка після запуску',
+    description: 'Технічний супровід після публікації',
   },
 ]
 
 export default function Benefits() {
   return (
-    <section id="perevahy" className="relative py-7 sm:py-8">
+    <section id="perevahy" className="section-py">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-5 text-center lg:mb-6">
-          <Badge className="mb-2">Переваги</Badge>
-          <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Чому обирають нас
-          </h2>
-        </div>
+        <SectionHeading
+          badge="Переваги"
+          title="Чому обирають нас"
+          description="Поєднуємо якість топової студії з гнучкими умовами для вашого бізнесу."
+        />
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 lg:gap-4">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-5">
           {benefits.map(({ icon: Icon, title, description }) => (
             <article
               key={title}
-              className="glass flex flex-col items-center rounded-xl border border-white/[0.06] px-3 py-5 text-center transition hover:border-[#FF8C00]/25 sm:px-4 sm:py-6"
+              className="glass-strong flex flex-col items-center rounded-2xl px-4 py-6 text-center transition hover:border-[#FF8C00]/30 hover:-translate-y-0.5 sm:py-7"
             >
-              <Icon className="mb-3 h-7 w-7 text-[#FF8C00] sm:h-8 sm:w-8" strokeWidth={1.5} />
+              <Icon className="mb-4 h-8 w-8 text-[#FF8C00]" strokeWidth={1.5} />
               <h3 className="text-sm font-semibold leading-snug text-white">{title}</h3>
               <p className="mt-2 text-[11px] leading-relaxed text-muted sm:text-xs">
                 {description}

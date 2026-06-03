@@ -11,7 +11,7 @@ const steps = [
 
 export default function Workflow() {
   return (
-    <section className="py-7 sm:py-8">
+    <section className="section-py">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading badge="Процес" title="Як ми працюємо" />
 

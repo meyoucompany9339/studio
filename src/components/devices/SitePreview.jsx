@@ -52,7 +52,7 @@ function DesktopPreview() {
           </span>
         </div>
 
-        <div className="mt-3 min-h-0 flex-1 sm:mt-4">
+        <div className="mt-3 min-h-0 flex-1 overflow-hidden sm:mt-4">
           <CitySkyline />
         </div>
 
@@ -94,7 +94,7 @@ function MobilePreview() {
         <span className="mt-2 inline-block w-fit rounded-md bg-[#FF8C00] px-3 py-1 text-[10px] font-bold text-black">
           Дізнатись
         </span>
-        <div className="my-3">
+        <div className="my-3 overflow-hidden">
           <CitySkyline compact />
         </div>
         <div className="mt-auto grid grid-cols-3 gap-1.5">
