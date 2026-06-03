@@ -1,0 +1,266 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-accent: #ff8c00;
+  --color-accent-light: #ffb347;
+  --color-surface: #050505;
+  --color-surface-elevated: #0c0c0c;
+  --color-surface-card: #111111;
+  --color-border: #1a1a1a;
+  --color-border-hover: #2a2a2a;
+  --color-muted: #9ca3af;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgb(255 140 0 / 0.35);
+  color: #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ffb347 0%, #ff8c00 45%, #ffb347 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgb(255 255 255 / 0.03);
+  border: 1px solid rgb(255 255 255 / 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-strong {
+  background: linear-gradient(
+    135deg,
+    rgb(255 255 255 / 0.06) 0%,
+    rgb(255 255 255 / 0.02) 100%
+  );
+  border: 1px solid rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgb(255 140 0 / 0.55),
+    rgb(255 179 71 / 0.2),
+    rgb(255 255 255 / 0.05)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.025) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.device-scene {
+  transform-style: preserve-3d;
+}
+
+/* Помаранчева обводка / rim light на мокапах */
+.device-rim-glow {
+  filter:
+    drop-shadow(0 0 1px rgb(255 140 0 / 0.9))
+    drop-shadow(0 0 10px rgb(255 140 0 / 0.55))
+    drop-shadow(0 0 28px rgb(255 140 0 / 0.35));
+}
+
+.device-rim-border {
+  position: relative;
+}
+
+.device-rim-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    145deg,
+    rgb(255 179 71 / 0.85) 0%,
+    rgb(255 140 0 / 0.45) 25%,
+    rgb(255 140 0 / 0.12) 50%,
+    rgb(255 140 0 / 0.35) 75%,
+    rgb(255 179 71 / 0.7) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.laptop-backlight-core {
+  background: radial-gradient(
+    ellipse 75% 55% at 42% 48%,
+    rgb(255 140 0 / 0.45) 0%,
+    rgb(255 179 71 / 0.2) 35%,
+    transparent 68%
+  );
+}
+
+/* Horizontal light rays behind devices */
+.light-streak {
+  position: absolute;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgb(255 140 0 / 0.15) 20%,
+    rgb(255 179 71 / 0.55) 50%,
+    rgb(255 140 0 / 0.15) 80%,
+    transparent 100%
+  );
+  filter: blur(0.5px);
+  pointer-events: none;
+}
+
+.light-streak-1 {
+  top: 32%;
+  left: -10%;
+  width: 105%;
+  height: 4px;
+  opacity: 1;
+}
+
+.light-streak-2 {
+  top: 40%;
+  left: -5%;
+  width: 100%;
+  height: 2px;
+  opacity: 0.85;
+  animation: streak-shift 8s ease-in-out infinite;
+}
+
+.light-streak-3 {
+  top: 48%;
+  left: 0;
+  width: 92%;
+  height: 2px;
+  opacity: 0.65;
+  animation: streak-shift 10s ease-in-out 1s infinite reverse;
+}
+
+@keyframes streak-shift {
+  0%,
+  100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateX(3%) scaleX(1.02);
+    opacity: 0.75;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out 1.5s infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; opacity: 0; }
+.stagger-2 { animation-delay: 0.2s; opacity: 0; }
+.stagger-3 { animation-delay: 0.3s; opacity: 0; }
+.stagger-4 { animation-delay: 0.4s; opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-delayed,
+  .animate-fade-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
