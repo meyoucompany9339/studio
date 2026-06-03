@@ -2,13 +2,16 @@ import { Link } from 'react-router-dom'
 import { Send, Mail, Phone } from 'lucide-react'
 import Logo from '../brand/Logo'
 import { SITE } from '../../config/site'
-
-const legal = [
-  { label: 'Політика конфіденційності', href: '#' },
-  { label: 'Умови співпраці', href: '#' },
-]
+import { useTranslation } from '../../i18n/LanguageProvider'
 
 export default function Footer() {
+  const { t } = useTranslation()
+
+  const legal = [
+    { label: t('footer.privacy'), href: '#' },
+    { label: t('footer.terms'), href: '#' },
+  ]
+
   return (
     <footer className="border-t border-white/[0.06] bg-surface-elevated">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -16,14 +19,13 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Logo asLink />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
-              {SITE.name} — професійні сайти для бізнесу без авансу за розробку.
-              Працюємо прозоро, на результат і з повним супроводом.
+              {SITE.name} — {t('footer.desc')}
             </p>
           </div>
 
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50">
-              Контакти
+              {t('nav.contacts')}
             </h4>
             <ul className="mt-4 space-y-3">
               <li>
@@ -60,32 +62,32 @@ export default function Footer() {
 
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50">
-              Навігація
+              {t('nav.navigation')}
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-muted">
               <li>
                 <Link to="/" className="transition hover:text-[#FFB347]">
-                  Головна
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link to="/spivpratsia" className="transition hover:text-[#FFB347]">
-                  Формати співпраці
+                  {t('nav.formats')}
                 </Link>
               </li>
               <li>
                 <Link to="/spivpratsia#faq" className="transition hover:text-[#FFB347]">
-                  Питання
+                  {t('nav.faq')}
                 </Link>
               </li>
               <li>
                 <Link to="/#roboty" className="transition hover:text-[#FFB347]">
-                  Наші роботи
+                  {t('nav.portfolio')}
                 </Link>
               </li>
               <li>
                 <Link to="/#vidguky" className="transition hover:text-[#FFB347]">
-                  Відгуки
+                  {t('nav.reviews')}
                 </Link>
               </li>
             </ul>
@@ -94,7 +96,7 @@ export default function Footer() {
 
         <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-6 sm:flex-row">
           <p className="text-sm text-muted">
-            © {new Date().getFullYear()} {SITE.name}. Усі права захищені.
+            © {new Date().getFullYear()} {SITE.name}. {t('footer.rights')}
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted">
             {legal.map(({ label, href }) => (

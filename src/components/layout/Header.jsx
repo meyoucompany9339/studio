@@ -3,18 +3,21 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import Logo from '../brand/Logo'
 import Button from '../ui/Button'
+import LanguageToggle from '../ui/LanguageToggle'
+import { useTranslation } from '../../i18n/LanguageProvider'
 import { scrollToHero } from '../../utils/navigation'
-
-const navLinks = [
-  { to: '/', label: 'Головна', isHome: true },
-  { to: '/spivpratsia', label: 'Формати співпраці' },
-  { to: '/spivpratsia#faq', label: 'Питання', isHash: true },
-]
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
+  const { t } = useTranslation()
+
+  const navLinks = [
+    { to: '/', label: t('nav.home'), isHome: true },
+    { to: '/spivpratsia', label: t('nav.formats') },
+    { to: '/spivpratsia#faq', label: t('nav.faq'), isHash: true },
+  ]
 
   const linkClass = ({ isActive }) =>
     `text-sm font-medium transition-colors whitespace-nowrap ${isActive ? 'text-[#FFB347]' : 'text-white/55 hover:text-white'}`
@@ -66,24 +69,28 @@ export default function Header() {
           )}
         </nav>
 
-        <div className="relative z-10 hidden md:block">
+        <div className="relative z-10 hidden items-center gap-3 md:flex">
           <Button
             href="#kontakt"
             variant="primary"
             className="!rounded-full !px-7 !py-3.5 !text-sm !font-bold !shadow-[0_0_22px_rgba(255,140,0,0.45),0_4px_20px_rgba(255,140,0,0.3)] hover:!shadow-[0_0_32px_rgba(255,140,0,0.55),0_6px_28px_rgba(255,140,0,0.4)] hover:!brightness-110"
           >
-            Зв&apos;язатися
+            {t('nav.contact')}
           </Button>
+          <LanguageToggle />
         </div>
 
-        <button
-          type="button"
-          className="relative z-10 rounded-lg p-2 text-muted hover:bg-white/5 md:hidden"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Меню"
-        >
-          {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="relative z-10 flex items-center gap-2 md:hidden">
+          <button
+            type="button"
+            className="rounded-lg p-2 text-muted hover:bg-white/5"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Menu"
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+          <LanguageToggle />
+        </div>
       </div>
 
       {mobileOpen && (
@@ -122,7 +129,7 @@ export default function Header() {
               className="mt-3 w-full !py-4 !text-base !font-bold !shadow-[0_0_22px_rgba(255,140,0,0.45),0_4px_20px_rgba(255,140,0,0.3)] hover:!shadow-[0_0_32px_rgba(255,140,0,0.55),0_6px_28px_rgba(255,140,0,0.4)]"
               onClick={() => setMobileOpen(false)}
             >
-              Зв&apos;язатися
+              {t('nav.contact')}
             </Button>
           </nav>
         </div>

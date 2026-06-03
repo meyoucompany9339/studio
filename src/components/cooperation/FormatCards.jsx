@@ -1,44 +1,22 @@
 import { Check, KeyRound, RefreshCw } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
-
-const formats = [
-  {
-    icon: KeyRound,
-    variant: 'Варіант 1',
-    title: 'Ви викуповуєте сайт',
-    points: [
-      'Одноразова оплата',
-      'Повне право власності',
-      'Усі вихідні файли',
-      'Повний контроль над сайтом',
-      'Можливість перенесення на будь-який хостинг',
-    ],
-    highlight: false,
-  },
-  {
-    icon: RefreshCw,
-    variant: 'Варіант 2',
-    title: 'Сайт як сервіс',
-    points: [
-      'Щомісячна оплата',
-      'Хостинг включено',
-      'Технічна підтримка',
-      'Резервне копіювання',
-      'Оновлення системи',
-      'Постійний супровід',
-    ],
-    highlight: true,
-  },
-]
+import { useTranslation } from '../../i18n/LanguageProvider'
 
 export default function FormatCards() {
+  const { t } = useTranslation()
+
+  const formats = [
+    { icon: KeyRound, ...t('cooperation.formats.buyout'), highlight: false },
+    { icon: RefreshCw, ...t('cooperation.formats.saas'), highlight: true },
+  ]
+
   return (
     <section className="section-py">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Співпраця"
-          title="Формати співпраці"
-          description="Оберіть модель, яка відповідає вашим цілям після запуску сайту."
+          badge={t('cooperation.formats.badge')}
+          title={t('cooperation.formats.title')}
+          description={t('cooperation.formats.desc')}
         />
 
         <div className="grid gap-8 lg:grid-cols-2">

@@ -1,46 +1,36 @@
 import { Check } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import ProjectPreview from '../portfolio/ProjectPreview'
+import { useTranslation } from '../../i18n/LanguageProvider'
 
-const projects = [
-  {
-    type: 'visitka',
-    title: 'Сайт-візитка',
-    subtitle: 'Pick Best Moments',
-    features: ['Галерея', 'Запис на зйомку', 'Контакти'],
-  },
-  {
-    type: 'corporate',
-    title: 'Корпоративний сайт',
-    features: ['Послуги', 'Блог', 'Портфоліо', 'CRM інтеграції'],
-  },
-  {
-    type: 'shop',
-    title: 'Інтернет-магазин',
-    subtitle: 'Latore Atelier',
-    features: ['Каталог товарів', 'Кошик', 'Онлайн оплата', 'Доставка'],
-  },
-  {
-    type: 'clinic',
-    title: 'Медична клініка',
-    features: ['Запис на прийом', 'Лікарі', 'Контакти'],
-  },
+const projectMeta = [
+  { type: 'visitka', subtitle: 'Pick Best Moments' },
+  { type: 'corporate' },
+  { type: 'shop', subtitle: 'Latore Atelier' },
+  { type: 'clinic' },
 ]
 
 export default function Portfolio() {
+  const { t } = useTranslation()
+
+  const projects = projectMeta.map(({ type, subtitle }) => {
+    const p = t(`portfolio.projects.${type}`)
+    return { type, subtitle, title: p.title, features: p.features }
+  })
+
   return (
     <section id="roboty" className="section-py">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Портфоліо"
-          title="Наші роботи"
-          description="Реальні проєкти студії — від візитки до e-commerce та корпоративних сайтів."
+          badge={t('portfolio.badge')}
+          title={t('portfolio.title')}
+          description={t('portfolio.desc')}
         />
 
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map(({ type, title, subtitle, features }) => (
             <article
-              key={title}
+              key={type}
               className="group glass-strong gradient-border overflow-hidden rounded-2xl transition hover:-translate-y-1"
             >
               <div className="border-b border-white/[0.06] p-4 sm:p-5">

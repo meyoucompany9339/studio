@@ -1,19 +1,20 @@
 import SectionHeading from '../ui/SectionHeading'
-
-const steps = [
-  { num: '01', title: 'Консультація' },
-  { num: '02', title: 'Аналіз бізнесу' },
-  { num: '03', title: 'Дизайн' },
-  { num: '04', title: 'Розробка' },
-  { num: '05', title: 'Тестування' },
-  { num: '06', title: 'Запуск' },
-]
+import { useTranslation } from '../../i18n/LanguageProvider'
 
 export default function Workflow() {
+  const { t } = useTranslation()
+  const steps = t('cooperation.workflow.steps').map((title, i) => ({
+    num: String(i + 1).padStart(2, '0'),
+    title,
+  }))
+
   return (
     <section className="section-py">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading badge="Процес" title="Як ми працюємо" />
+        <SectionHeading
+          badge={t('cooperation.workflow.badge')}
+          title={t('cooperation.workflow.title')}
+        />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, i) => (

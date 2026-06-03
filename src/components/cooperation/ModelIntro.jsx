@@ -1,6 +1,9 @@
 import { Wallet } from 'lucide-react'
+import { useTranslation } from '../../i18n/LanguageProvider'
 
 export default function ModelIntro() {
+  const { t } = useTranslation()
+
   return (
     <section className="pb-2 sm:pb-4">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -9,11 +12,11 @@ export default function ModelIntro() {
             <Wallet className="h-7 w-7 text-accent" />
           </div>
           <p className="text-lg leading-relaxed text-white sm:text-xl">
-            Ми створюємо сайт{' '}
-            <span className="font-semibold text-accent-light">повністю за власний рахунок</span>.
+            {t('cooperation.intro1')}{' '}
+            <span className="font-semibold text-accent-light">{t('cooperation.intro1accent')}</span>.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-            Після запуску ви обираєте один із форматів співпраці.
+            {t('cooperation.intro2')}
           </p>
         </div>
       </div>

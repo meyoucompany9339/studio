@@ -1,26 +1,34 @@
 import SectionHeading from '../ui/SectionHeading'
+import { useTranslation } from '../../i18n/LanguageProvider'
 
-const plans = [
-  { name: 'Сайт-візитка', price: 'від 150€', popular: false },
-  { name: 'Корпоративний сайт', price: 'від 799€', popular: true },
-  { name: 'Інтернет-магазин', price: 'від 1099€', popular: false },
-  { name: 'Сайт як сервіс', price: 'від 49€/місяць', popular: false },
-]
+const planKeys = ['visitka', 'corporate', 'shop', 'saas']
 
 export default function Pricing() {
+  const { t } = useTranslation()
+
+  const plans = planKeys.map((key) => ({
+    key,
+    name: t(`cooperation.pricing.plans.${key}`),
+    price:
+      key === 'saas'
+        ? `${t('cooperation.pricing.from')} ${t(`cooperation.pricing.prices.${key}`)}${t('cooperation.pricing.perMonth')}`
+        : `${t('cooperation.pricing.from')} ${t(`cooperation.pricing.prices.${key}`)}`,
+    popular: key === 'corporate',
+  }))
+
   return (
     <section className="section-py bg-surface-elevated">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Вартість"
-          title="Орієнтовна вартість"
-          description="Точна вартість визначається після консультації та аналізу проєкту."
+          badge={t('cooperation.pricing.badge')}
+          title={t('cooperation.pricing.title')}
+          description={t('cooperation.pricing.desc')}
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-          {plans.map(({ name, price, popular }) => (
+          {plans.map(({ key, name, price, popular }) => (
             <article
-              key={name}
+              key={key}
               className={`relative rounded-2xl p-6 text-center transition hover:-translate-y-0.5 sm:p-7 ${
                 popular
                   ? 'glass-strong gradient-border ring-1 ring-[#FF8C00]/25'
@@ -29,7 +37,7 @@ export default function Pricing() {
             >
               {popular && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#FF8C00] to-[#FFB347] px-3 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black">
-                  Популярно
+                  {t('cooperation.pricing.popular')}
                 </span>
               )}
               <h3 className="text-sm font-semibold text-white/90 sm:text-base">{name}</h3>
@@ -41,7 +49,7 @@ export default function Pricing() {
         </div>
 
         <p className="mx-auto mt-5 max-w-2xl text-center text-sm text-muted sm:text-base">
-          Точна вартість визначається після консультації та аналізу проєкту.
+          {t('cooperation.pricing.desc')}
         </p>
       </div>
     </section>

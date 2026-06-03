@@ -1,28 +1,6 @@
 import { Star, Quote } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
-
-const reviews = [
-  {
-    text: 'Сайт був готовий швидше, ніж очікували. Дуже задоволені співпрацею.',
-    author: 'Олена К.',
-    role: 'Салон краси',
-  },
-  {
-    text: 'Після запуску почали отримувати більше заявок з сайту. Рекомендуємо.',
-    author: 'Андрій М.',
-    role: 'Автосервіс',
-  },
-  {
-    text: 'Зручний формат без авансу — саме те, що потрібно малому бізнесу.',
-    author: 'Ірина В.',
-    role: 'Медична клініка',
-  },
-  {
-    text: 'Професійний підхід, чіткі терміни та підтримка після запуску.',
-    author: 'Дмитро С.',
-    role: 'Будівельна компанія',
-  },
-]
+import { useTranslation } from '../../i18n/LanguageProvider'
 
 function Stars() {
   return (
@@ -35,10 +13,13 @@ function Stars() {
 }
 
 export default function Testimonials() {
+  const { t } = useTranslation()
+  const reviews = t('testimonials.items')
+
   return (
     <section id="vidguky" className="section-py bg-surface-elevated">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading badge="Відгуки" title="Відгуки клієнтів" />
+        <SectionHeading badge={t('testimonials.badge')} title={t('testimonials.title')} />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:gap-6">
           {reviews.map(({ text, author, role }) => (

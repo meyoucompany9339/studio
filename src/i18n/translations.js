@@ -1,0 +1,359 @@
+export const translations = {
+  uk: {
+    site: {
+      tagline: 'Веб-студія',
+    },
+    nav: {
+      home: 'Головна',
+      formats: 'Формати співпраці',
+      faq: 'Питання',
+      contact: "Зв'язатися",
+      portfolio: 'Наші роботи',
+      reviews: 'Відгуки',
+      contacts: 'Контакти',
+      navigation: 'Навігація',
+    },
+    lang: {
+      switchToEn: 'Перемкнути на англійську',
+      switchToUk: 'Перемкнути на українську',
+      en: 'EN',
+      uk: 'UA',
+    },
+    hero: {
+      title: 'Преміальні сайти для бізнесу',
+      titleAccent: 'від 0€',
+      desc: 'Створимо сучасний сайт під ключ без авансових платежів за розробку. Ви оплачуєте лише після запуску та обираєте зручний формат співпраці.',
+      ctaFormats: 'Обрати формат співпраці',
+      ctaMore: 'Дізнатися більше',
+      perks: {
+        noDeposit: 'Без авансу',
+        launch: 'Запуск за 2–4 тижні',
+        design: 'Індивідуальний дизайн',
+        support: 'Підтримка після запуску',
+      },
+    },
+    trust: {
+      badge: 'Довіра',
+      title: 'Цифри, яким можна довіряти',
+      desc: 'Прозора робота, передбачувані терміни та підтримка на кожному етапі.',
+      stats: {
+        sites: { value: '50+', label: 'сайтів запущено', desc: 'Реальні проєкти для бізнесу' },
+        weeks: { value: 'до 4', suffix: 'тижнів', label: 'на запуск', desc: 'Чіткий таймлайн без затягувань' },
+        clients: { value: '98%', label: 'задоволених клієнтів', desc: 'Працюємо на результат' },
+        support: { label: 'Підтримка після запуску', desc: 'Не залишаємо вас самі з технічними питаннями' },
+      },
+    },
+    benefits: {
+      badge: 'Переваги',
+      title: 'Чому обирають нас',
+      desc: 'Поєднуємо якість топової студії з гнучкими умовами для вашого бізнесу.',
+      items: [
+        { title: 'Швидкий запуск', description: 'Сайт готовий за 2–4 тижні з чітким таймлайном' },
+        { title: 'Індивідуальний дизайн', description: 'Унікальний візуал під ваш бренд, без шаблонів' },
+        { title: 'Адаптивність', description: 'Бездоганний вигляд на телефоні та десктопі' },
+        { title: 'SEO оптимізація', description: 'Підготовка до пошукових систем з першого дня' },
+        { title: 'Без ризику', description: 'Оплата лише після запуску готового сайту' },
+        { title: 'Підтримка', description: 'Технічний супровід після публікації' },
+      ],
+    },
+    portfolio: {
+      badge: 'Портфоліо',
+      title: 'Наші роботи',
+      desc: 'Реальні проєкти студії — від візитки до e-commerce та корпоративних сайтів.',
+      projects: {
+        visitka: { title: 'Сайт-візитка', features: ['Галерея', 'Запис на зйомку', 'Контакти'] },
+        corporate: { title: 'Корпоративний сайт', features: ['Послуги', 'Блог', 'Портфоліо', 'CRM інтеграції'] },
+        shop: { title: 'Інтернет-магазин', features: ['Каталог товарів', 'Кошик', 'Онлайн оплата', 'Доставка'] },
+        clinic: { title: 'Медична клініка', features: ['Запис на прийом', 'Лікарі', 'Контакти'] },
+      },
+      preview: {
+        visitka: 'Pick Best Moments — фотографія у Барселоні',
+        corporate: 'Корпоративний сайт — бізнес-центр',
+        shop: 'Latore Atelier — інтернет-магазин преміум-одягу',
+        clinic: 'Медична клініка — запис на прийом',
+      },
+    },
+    testimonials: {
+      badge: 'Відгуки',
+      title: 'Відгуки клієнтів',
+      items: [
+        { text: 'Сайт був готовий швидше, ніж очікували. Дуже задоволені співпрацею.', author: 'Олена К.', role: 'Салон краси' },
+        { text: 'Після запуску почали отримувати більше заявок з сайту. Рекомендуємо.', author: 'Андрій М.', role: 'Автосервіс' },
+        { text: 'Зручний формат без авансу — саме те, що потрібно малому бізнесу.', author: 'Ірина В.', role: 'Медична клініка' },
+        { text: 'Професійний підхід, чіткі терміни та підтримка після запуску.', author: 'Дмитро С.', role: 'Будівельна компанія' },
+      ],
+    },
+    guarantees: {
+      badge: 'Гарантії',
+      title: 'Наші гарантії',
+      desc: 'Ви отримуєте не просто сайт, а надійне digital-рішення з повним супроводом.',
+      items: [
+        { title: 'Без прихованих платежів', desc: 'Прозора вартість після консультації' },
+        { title: 'Унікальний дизайн', desc: 'Не шаблони — індивідуальний візуал' },
+        { title: 'Повна адаптація під мобільні', desc: 'Ідеально на всіх екранах' },
+        { title: 'SEO-підготовка', desc: 'Базова оптимізація вже в пакеті' },
+        { title: 'Технічна підтримка', desc: 'Супровід після запуску' },
+        { title: 'Безпечний хостинг', desc: 'SSL, резервні копії, стабільність' },
+      ],
+    },
+    contact: {
+      title: 'Готові обговорити ваш проєкт?',
+      desc: 'Із задоволенням відповімо на всі запитання та допоможемо обрати найкраще рішення для вашого бізнесу.',
+      telegram: 'Написати в Telegram',
+      consult: 'Замовити консультацію',
+      emailSubject: 'Консультація — AUREA Studio',
+    },
+    footer: {
+      desc: 'професійні сайти для бізнесу без авансу за розробку. Працюємо прозоро, на результат і з повним супроводом.',
+      rights: 'Усі права захищені.',
+      privacy: 'Політика конфіденційності',
+      terms: 'Умови співпраці',
+    },
+    cooperation: {
+      heroTitle: 'Як це',
+      heroAccent: 'працює',
+      heroDesc: 'Створюємо сайт за власний рахунок — ви обираєте формат співпраці після запуску.',
+      intro1: 'Ми створюємо сайт',
+      intro1accent: 'повністю за власний рахунок',
+      intro2: 'Після запуску ви обираєте один із форматів співпраці.',
+      formats: {
+        badge: 'Співпраця',
+        title: 'Формати співпраці',
+        desc: 'Оберіть модель, яка відповідає вашим цілям після запуску сайту.',
+        buyout: {
+          variant: 'Варіант 1',
+          title: 'Ви викуповуєте сайт',
+          points: ['Одноразова оплата', 'Повне право власності', 'Усі вихідні файли', 'Повний контроль над сайтом', 'Можливість перенесення на будь-який хостинг'],
+        },
+        saas: {
+          variant: 'Варіант 2',
+          title: 'Сайт як сервіс',
+          points: ['Щомісячна оплата', 'Хостинг включено', 'Технічна підтримка', 'Резервне копіювання', 'Оновлення системи', 'Постійний супровід'],
+        },
+      },
+      pricing: {
+        badge: 'Вартість',
+        title: 'Орієнтовна вартість',
+        desc: 'Точна вартість визначається після консультації та аналізу проєкту.',
+        popular: 'Популярно',
+        from: 'від',
+        perMonth: '/місяць',
+        plans: {
+          visitka: 'Сайт-візитка',
+          corporate: 'Корпоративний сайт',
+          shop: 'Інтернет-магазин',
+          saas: 'Сайт як сервіс',
+        },
+        prices: { visitka: '150€', corporate: '799€', shop: '1099€', saas: '49€' },
+      },
+      included: {
+        badge: 'Пакет',
+        title: 'Що входить у кожен сайт',
+        desc: 'Повний базовий набір — у кожному проєкті без прихованих доплат за розробку.',
+        items: ['Індивідуальний дизайн', 'Адаптація під телефон', 'SEO-оптимізація', 'SSL-захист', 'Форми заявок', 'Підключення домену', 'Базова аналітика'],
+      },
+      workflow: {
+        badge: 'Процес',
+        title: 'Як ми працюємо',
+        steps: ['Консультація', 'Аналіз бізнесу', 'Дизайн', 'Розробка', 'Тестування', 'Запуск'],
+      },
+      faq: {
+        badge: 'FAQ',
+        title: 'Часті запитання',
+        items: [
+          { question: 'Чи справді розробка безкоштовна?', answer: 'Так. Ми не беремо аванс за дизайн і розробку — інвестуємо в створення вашого сайту самостійно. Ви починаєте оплату лише після запуску за обраним форматом співпраці.' },
+          { question: 'Коли я плачу?', answer: 'Після узгодження проєкту, завершення розробки та публікації сайту. Далі — або щомісячна підписка (сайт як сервіс), або викуп за фіксованою сумою.' },
+          { question: 'Чи можу я викупити сайт?', answer: 'Так. У будь-який момент можна перейти на формат викупу: одноразова оплата, повна передача прав, вихідних файлів і доступів.' },
+          { question: 'Чи можу перейти з сервісної моделі на викуп?', answer: 'Звісно. Багато клієнтів починають із підписки, а потім викуповують сайт, коли переконаються в результаті. Умови викупу обговорюємо індивідуально.' },
+        ],
+      },
+    },
+    meta: {
+      title: 'AUREA Studio — Преміальні сайти для бізнесу від 0€',
+      description: 'AUREA Studio — преміальні сайти для бізнесу від 0€. Без авансу за розробку. Сайти під ключ.',
+    },
+  },
+  en: {
+    site: {
+      tagline: 'Web studio',
+    },
+    nav: {
+      home: 'Home',
+      formats: 'Cooperation formats',
+      faq: 'FAQ',
+      contact: 'Contact',
+      portfolio: 'Our work',
+      reviews: 'Reviews',
+      contacts: 'Contact',
+      navigation: 'Navigation',
+    },
+    lang: {
+      switchToEn: 'Switch to English',
+      switchToUk: 'Switch to Ukrainian',
+      en: 'EN',
+      uk: 'UA',
+    },
+    hero: {
+      title: 'Premium business websites',
+      titleAccent: 'from €0',
+      desc: 'We build a modern turnkey website with no upfront development fees. You pay only after launch and choose the cooperation format that suits you.',
+      ctaFormats: 'Choose cooperation format',
+      ctaMore: 'Learn more',
+      perks: {
+        noDeposit: 'No upfront payment',
+        launch: 'Launch in 2–4 weeks',
+        design: 'Custom design',
+        support: 'Post-launch support',
+      },
+    },
+    trust: {
+      badge: 'Trust',
+      title: 'Numbers you can trust',
+      desc: 'Transparent work, predictable timelines, and support at every stage.',
+      stats: {
+        sites: { value: '50+', label: 'websites launched', desc: 'Real projects for businesses' },
+        weeks: { value: 'up to 4', suffix: 'weeks', label: 'to launch', desc: 'Clear timeline without delays' },
+        clients: { value: '98%', label: 'satisfied clients', desc: 'We focus on results' },
+        support: { label: 'Post-launch support', desc: 'We won’t leave you alone with technical issues' },
+      },
+    },
+    benefits: {
+      badge: 'Benefits',
+      title: 'Why clients choose us',
+      desc: 'Top-tier studio quality with flexible terms for your business.',
+      items: [
+        { title: 'Fast launch', description: 'Website ready in 2–4 weeks with a clear timeline' },
+        { title: 'Custom design', description: 'Unique visuals for your brand, no templates' },
+        { title: 'Responsive', description: 'Flawless on mobile and desktop' },
+        { title: 'SEO optimization', description: 'Search-ready from day one' },
+        { title: 'No risk', description: 'Pay only after your site goes live' },
+        { title: 'Support', description: 'Technical care after publication' },
+      ],
+    },
+    portfolio: {
+      badge: 'Portfolio',
+      title: 'Our work',
+      desc: 'Real studio projects — from business cards to e-commerce and corporate sites.',
+      projects: {
+        visitka: { title: 'Business card site', features: ['Gallery', 'Booking', 'Contact'] },
+        corporate: { title: 'Corporate website', features: ['Services', 'Blog', 'Portfolio', 'CRM integrations'] },
+        shop: { title: 'Online store', features: ['Product catalog', 'Cart', 'Online payment', 'Delivery'] },
+        clinic: { title: 'Medical clinic', features: ['Appointments', 'Doctors', 'Contact'] },
+      },
+      preview: {
+        visitka: 'Pick Best Moments — photography in Barcelona',
+        corporate: 'Corporate website — business center',
+        shop: 'Latore Atelier — premium fashion e-commerce',
+        clinic: 'Medical clinic — online booking',
+      },
+    },
+    testimonials: {
+      badge: 'Reviews',
+      title: 'Client reviews',
+      items: [
+        { text: 'The site was ready faster than we expected. Very happy with the collaboration.', author: 'Olena K.', role: 'Beauty salon' },
+        { text: 'After launch we started getting more inquiries from the website. Highly recommend.', author: 'Andrii M.', role: 'Auto service' },
+        { text: 'The no-upfront format is exactly what a small business needs.', author: 'Iryna V.', role: 'Medical clinic' },
+        { text: 'Professional approach, clear deadlines, and support after launch.', author: 'Dmytro S.', role: 'Construction company' },
+      ],
+    },
+    guarantees: {
+      badge: 'Guarantees',
+      title: 'Our guarantees',
+      desc: 'You get more than a website — a reliable digital solution with full support.',
+      items: [
+        { title: 'No hidden fees', desc: 'Transparent pricing after consultation' },
+        { title: 'Unique design', desc: 'No templates — custom visuals' },
+        { title: 'Full mobile adaptation', desc: 'Perfect on every screen' },
+        { title: 'SEO-ready', desc: 'Basic optimization included' },
+        { title: 'Technical support', desc: 'Care after launch' },
+        { title: 'Secure hosting', desc: 'SSL, backups, stability' },
+      ],
+    },
+    contact: {
+      title: 'Ready to discuss your project?',
+      desc: 'We’ll answer your questions and help you choose the best solution for your business.',
+      telegram: 'Message on Telegram',
+      consult: 'Book a consultation',
+      emailSubject: 'Consultation — AUREA Studio',
+    },
+    footer: {
+      desc: 'professional business websites with no upfront development fee. Transparent, results-driven work with full support.',
+      rights: 'All rights reserved.',
+      privacy: 'Privacy policy',
+      terms: 'Terms of cooperation',
+    },
+    cooperation: {
+      heroTitle: 'How it',
+      heroAccent: 'works',
+      heroDesc: 'We build the site at our expense — you choose the cooperation format after launch.',
+      intro1: 'We create your website',
+      intro1accent: 'entirely at our expense',
+      intro2: 'After launch, you choose one of the cooperation formats.',
+      formats: {
+        badge: 'Cooperation',
+        title: 'Cooperation formats',
+        desc: 'Choose the model that fits your goals after the site goes live.',
+        buyout: {
+          variant: 'Option 1',
+          title: 'You buy out the site',
+          points: ['One-time payment', 'Full ownership', 'All source files', 'Full control of the site', 'Transfer to any hosting'],
+        },
+        saas: {
+          variant: 'Option 2',
+          title: 'Site as a service',
+          points: ['Monthly payment', 'Hosting included', 'Technical support', 'Backups', 'System updates', 'Ongoing care'],
+        },
+      },
+      pricing: {
+        badge: 'Pricing',
+        title: 'Estimated pricing',
+        desc: 'Final cost is determined after consultation and project analysis.',
+        popular: 'Popular',
+        from: 'from',
+        perMonth: '/month',
+        plans: {
+          visitka: 'Business card site',
+          corporate: 'Corporate website',
+          shop: 'Online store',
+          saas: 'Site as a service',
+        },
+        prices: { visitka: '€150', corporate: '€799', shop: '€1099', saas: '€49' },
+      },
+      included: {
+        badge: 'Package',
+        title: "What's included in every site",
+        desc: 'Full basic package in every project — no hidden development fees.',
+        items: ['Custom design', 'Mobile adaptation', 'SEO optimization', 'SSL security', 'Lead forms', 'Domain setup', 'Basic analytics'],
+      },
+      workflow: {
+        badge: 'Process',
+        title: 'How we work',
+        steps: ['Consultation', 'Business analysis', 'Design', 'Development', 'Testing', 'Launch'],
+      },
+      faq: {
+        badge: 'FAQ',
+        title: 'Frequently asked questions',
+        items: [
+          { question: 'Is development really free?', answer: 'Yes. We don’t charge upfront for design and development — we invest in building your site. You start paying only after launch, under your chosen cooperation format.' },
+          { question: 'When do I pay?', answer: 'After the project is agreed, development is complete, and the site is published. Then either a monthly subscription (site as a service) or a one-time buyout.' },
+          { question: 'Can I buy out the site?', answer: 'Yes. You can switch to buyout anytime: one-time payment, full transfer of rights, source files, and access.' },
+          { question: 'Can I switch from subscription to buyout?', answer: 'Of course. Many clients start with a subscription and buy out the site once they see results. Buyout terms are discussed individually.' },
+        ],
+      },
+    },
+    meta: {
+      title: 'AUREA Studio — Premium business websites from €0',
+      description: 'AUREA Studio — premium business websites from €0. No upfront development fee. Turnkey websites.',
+    },
+  },
+}
+
+export function getTranslation(locale, key) {
+  const keys = key.split('.')
+  let value = translations[locale]
+  for (const k of keys) {
+    value = value?.[k]
+  }
+  return value
+}
