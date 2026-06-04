@@ -10,7 +10,7 @@ export default function Layout() {
       <ScrollToTop />
       <ScrollToHash />
       <Header />
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-12 md:pt-16">
         <Outlet />
       </main>
       <Footer />

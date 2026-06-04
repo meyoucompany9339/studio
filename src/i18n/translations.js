@@ -37,10 +37,10 @@ export const translations = {
       title: 'Цифри, яким можна довіряти',
       desc: 'Прозора робота, передбачувані терміни та підтримка на кожному етапі.',
       stats: {
-        sites: { value: '50+', label: 'сайтів запущено', desc: 'Реальні проєкти для бізнесу' },
-        weeks: { value: 'до 4', suffix: 'тижнів', label: 'на запуск', desc: 'Чіткий таймлайн без затягувань' },
-        clients: { value: '98%', label: 'задоволених клієнтів', desc: 'Працюємо на результат' },
-        support: { label: 'Підтримка після запуску', desc: 'Не залишаємо вас самі з технічними питаннями' },
+        sites: { value: '50+', label: 'сайтів запущено', desc: 'Реальні проєкти для бізнесу', mobileLine: '50+' },
+        weeks: { value: 'до 4', suffix: 'тижнів', label: 'на запуск', desc: 'Чіткий таймлайн без затягувань', mobileLine: '4 тижні' },
+        clients: { value: '98%', label: 'задоволених клієнтів', desc: 'Працюємо на результат', mobileLine: '98%' },
+        support: { label: 'Підтримка після запуску', desc: 'Не залишаємо вас самі з технічними питаннями', mobileLine: '24/7' },
       },
     },
     benefits: {
@@ -55,6 +55,16 @@ export const translations = {
         { title: 'Без ризику', description: 'Оплата лише після запуску готового сайту' },
         { title: 'Підтримка', description: 'Технічний супровід після публікації' },
       ],
+    },
+    latestWorks: {
+      badge: 'Портфоліо',
+      title: 'Наші останні роботи',
+      desc: 'Реальні сайти, які вже працюють для бізнесу наших клієнтів.',
+      brands: {
+        visitka: 'Pick Best Moments',
+        shop: 'Latore Atelier',
+        clinic: 'Медична клініка',
+      },
     },
     portfolio: {
       badge: 'Портфоліо',
@@ -76,6 +86,7 @@ export const translations = {
     testimonials: {
       badge: 'Відгуки',
       title: 'Відгуки клієнтів',
+      verified: 'Реальний клієнт',
       items: [
         { text: 'Сайт був готовий швидше, ніж очікували. Дуже задоволені співпрацею.', author: 'Олена К.', role: 'Салон краси' },
         { text: 'Після запуску почали отримувати більше заявок з сайту. Рекомендуємо.', author: 'Андрій М.', role: 'Автосервіс' },
@@ -211,10 +222,10 @@ export const translations = {
       title: 'Numbers you can trust',
       desc: 'Transparent work, predictable timelines, and support at every stage.',
       stats: {
-        sites: { value: '50+', label: 'websites launched', desc: 'Real projects for businesses' },
-        weeks: { value: 'up to 4', suffix: 'weeks', label: 'to launch', desc: 'Clear timeline without delays' },
-        clients: { value: '98%', label: 'satisfied clients', desc: 'We focus on results' },
-        support: { label: 'Post-launch support', desc: 'We won’t leave you alone with technical issues' },
+        sites: { value: '50+', label: 'websites launched', desc: 'Real projects for businesses', mobileLine: '50+' },
+        weeks: { value: 'up to 4', suffix: 'weeks', label: 'to launch', desc: 'Clear timeline without delays', mobileLine: '4 weeks' },
+        clients: { value: '98%', label: 'satisfied clients', desc: 'We focus on results', mobileLine: '98%' },
+        support: { label: 'Post-launch support', desc: 'We won’t leave you alone with technical issues', mobileLine: '24/7' },
       },
     },
     benefits: {
@@ -229,6 +240,16 @@ export const translations = {
         { title: 'No risk', description: 'Pay only after your site goes live' },
         { title: 'Support', description: 'Technical care after publication' },
       ],
+    },
+    latestWorks: {
+      badge: 'Portfolio',
+      title: 'Our latest work',
+      desc: 'Live websites already driving results for our clients.',
+      brands: {
+        visitka: 'Pick Best Moments',
+        shop: 'Latore Atelier',
+        clinic: 'Medical clinic',
+      },
     },
     portfolio: {
       badge: 'Portfolio',
@@ -250,6 +271,7 @@ export const translations = {
     testimonials: {
       badge: 'Reviews',
       title: 'Client reviews',
+      verified: 'Real client',
       items: [
         { text: 'The site was ready faster than we expected. Very happy with the collaboration.', author: 'Olena K.', role: 'Beauty salon' },
         { text: 'After launch we started getting more inquiries from the website. Highly recommend.', author: 'Andrii M.', role: 'Auto service' },

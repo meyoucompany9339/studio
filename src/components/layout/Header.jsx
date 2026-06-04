@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-[#050505]/85 backdrop-blur-xl">
-      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-12 max-w-7xl items-center justify-between px-3 sm:px-6 md:h-16 lg:px-8">
         <div className="relative z-10">
           <Logo onHomeClick={handleHomeClick} />
         </div>
@@ -80,22 +80,22 @@ export default function Header() {
           <LanguageToggle />
         </div>
 
-        <div className="relative z-10 flex items-center gap-2 md:hidden">
+        <div className="relative z-10 flex items-center gap-1.5 md:hidden">
           <button
             type="button"
-            className="rounded-lg p-2 text-muted hover:bg-white/5"
+            className="rounded-lg p-1.5 text-muted hover:bg-white/5"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? <X className="h-[18px] w-[18px]" /> : <Menu className="h-[18px] w-[18px]" />}
           </button>
           <LanguageToggle />
         </div>
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-white/[0.06] bg-[#050505]/95 px-4 py-4 backdrop-blur-xl md:hidden">
-          <nav className="flex flex-col gap-3">
+        <div className="border-t border-white/[0.06] bg-[#050505]/95 px-3 py-3 backdrop-blur-xl md:hidden">
+          <nav className="flex flex-col gap-2">
             {navLinks.map((link) =>
               link.isHome ? (
                 <NavLink
@@ -126,7 +126,7 @@ export default function Header() {
             <Button
               href="#kontakt"
               variant="primary"
-              className="mt-3 w-full !py-4 !text-base !font-bold !shadow-[0_0_22px_rgba(255,140,0,0.45),0_4px_20px_rgba(255,140,0,0.3)] hover:!shadow-[0_0_32px_rgba(255,140,0,0.55),0_6px_28px_rgba(255,140,0,0.4)]"
+              className="mt-2 w-full !py-3 !text-sm !font-bold !shadow-[0_0_22px_rgba(255,140,0,0.45),0_4px_20px_rgba(255,140,0,0.3)]"
               onClick={() => setMobileOpen(false)}
             >
               {t('nav.contact')}

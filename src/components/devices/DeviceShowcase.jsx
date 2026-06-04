@@ -1,7 +1,7 @@
 /** Преміальний mockup — головний візуал Hero */
 export default function DeviceShowcase() {
   return (
-    <div className="hero-device-stage relative flex w-full min-h-[300px] items-center justify-center sm:min-h-[340px] lg:min-h-[400px] lg:justify-end">
+    <div className="hero-device-stage relative flex w-full min-h-[300px] items-center justify-center sm:min-h-[340px] lg:min-h-[400px] lg:justify-end max-md:max-h-[168px] max-md:min-h-0 max-md:items-end max-md:pt-1">
       <div className="pointer-events-none absolute inset-0 overflow-visible" aria-hidden>
         <div className="laptop-backlight-core absolute inset-[-10%] opacity-100" />
         <div className="glow-orb absolute left-[5%] top-[22%] h-56 w-72 bg-[#FF8C00]/45 sm:h-64 sm:w-80" />

@@ -9,7 +9,7 @@ export default function FAQ({ items }) {
       {items.map((item, index) => {
         const isOpen = openIndex === index
         return (
-          <div key={item.question} className="py-5">
+          <div key={item.question} className="py-3.5 md:py-5">
             <button
               type="button"
               className="flex w-full items-start justify-between gap-4 text-left"
