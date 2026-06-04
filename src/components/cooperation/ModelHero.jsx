@@ -12,7 +12,7 @@ export default function ModelHero() {
           {t('cooperation.heroTitle')}{' '}
           <span className="gradient-text">{t('cooperation.heroAccent')}</span>
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-base text-muted sm:text-lg">
+        <p className="mx-auto mt-4 max-w-none px-2 text-[clamp(0.7rem,2.35vw,1.125rem)] leading-snug text-muted whitespace-nowrap sm:text-lg">
           {t('cooperation.heroDesc')}
         </p>
       </div>
