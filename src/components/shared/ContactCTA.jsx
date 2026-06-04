@@ -16,7 +16,7 @@ export default function ContactCTA() {
             <h2 className="font-display text-3xl font-bold text-white sm:text-4xl max-md:text-2xl">
               {t('contact.title')}
             </h2>
-            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg max-md:mt-3 max-md:text-sm">
+            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted max-md:mt-3 sm:text-lg">
               {t('contact.desc')}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4 max-md:mt-7 max-md:gap-2.5">

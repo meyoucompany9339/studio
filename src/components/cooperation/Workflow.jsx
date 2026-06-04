@@ -3,20 +3,55 @@ import { useTranslation } from '../../i18n/LanguageProvider'
 
 export default function Workflow() {
   const { t } = useTranslation()
-  const steps = t('cooperation.workflow.steps').map((title, i) => ({
+  const stepsFull = t('cooperation.workflow.steps')
+  const stepsShort = t('cooperation.workflow.stepsShort')
+
+  const steps = stepsFull.map((title, i) => ({
     num: String(i + 1).padStart(2, '0'),
     title,
+    titleShort: stepsShort[i] ?? title,
   }))
 
   return (
-    <section className="section-py">
+    <section className="section-py max-md:!py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge={t('cooperation.workflow.badge')}
           title={t('cooperation.workflow.title')}
         />
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Мобільна — один компактний вертикальний timeline */}
+        <div className="glass-strong rounded-2xl border border-white/[0.06] p-4 max-md:block md:hidden">
+          <ol className="relative">
+            {steps.map((step, i) => (
+              <li key={step.num} className="relative flex gap-3">
+                <div className="relative flex w-3.5 shrink-0 flex-col items-center">
+                  <span
+                    className="relative z-10 mt-1 h-2 w-2 shrink-0 rounded-full bg-[#FF8C00] shadow-[0_0_8px_rgb(255_140_0/0.4)]"
+                    aria-hidden
+                  />
+                  {i < steps.length - 1 && (
+                    <span
+                      className="absolute top-3 bottom-0 w-px bg-gradient-to-b from-[#FF8C00]/50 to-[#FF8C00]/12"
+                      aria-hidden
+                    />
+                  )}
+                </div>
+                <p
+                  className={`flex-1 text-sm leading-snug ${i < steps.length - 1 ? 'pb-2.5' : 'pb-0'}`}
+                >
+                  <span className="font-display font-bold tabular-nums text-[#FFB347]">
+                    {step.num}
+                  </span>{' '}
+                  <span className="font-medium text-white">{step.titleShort}</span>
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        {/* Десктоп — 6 карток як раніше */}
+        <div className="hidden gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, i) => (
             <div
               key={step.num}

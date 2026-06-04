@@ -155,6 +155,12 @@ export const translations = {
           shop: 'Інтернет-магазин',
           saas: 'Сайт як сервіс',
         },
+        plansShort: {
+          visitka: 'Сайт-візитка',
+          corporate: 'Корпоративний',
+          shop: 'Магазин',
+          saas: 'Сервіс',
+        },
         prices: { visitka: '150€', corporate: '799€', shop: '1099€', saas: '49€' },
       },
       included: {
@@ -162,11 +168,13 @@ export const translations = {
         title: 'Що входить у кожен сайт',
         desc: 'Повний базовий набір — у кожному проєкті без прихованих доплат за розробку.',
         items: ['Індивідуальний дизайн', 'Адаптація під телефон', 'SEO-оптимізація', 'SSL-захист', 'Форми заявок', 'Підключення домену', 'Базова аналітика'],
+        itemsShort: ['Дизайн', 'Адаптація', 'SEO', 'SSL', 'Форми', 'Домен', 'Аналітика'],
       },
       workflow: {
         badge: 'Процес',
         title: 'Як ми працюємо',
         steps: ['Консультація', 'Аналіз бізнесу', 'Дизайн', 'Розробка', 'Тестування', 'Запуск'],
+        stepsShort: ['Консультація', 'Аналіз', 'Дизайн', 'Розробка', 'Тестування', 'Запуск'],
       },
       faq: {
         badge: 'FAQ',
@@ -340,6 +348,12 @@ export const translations = {
           shop: 'Online store',
           saas: 'Site as a service',
         },
+        plansShort: {
+          visitka: 'Business card',
+          corporate: 'Corporate',
+          shop: 'Store',
+          saas: 'SaaS',
+        },
         prices: { visitka: '€150', corporate: '€799', shop: '€1099', saas: '€49' },
       },
       included: {
@@ -347,11 +361,13 @@ export const translations = {
         title: "What's included in every site",
         desc: 'Full basic package in every project — no hidden development fees.',
         items: ['Custom design', 'Mobile adaptation', 'SEO optimization', 'SSL security', 'Lead forms', 'Domain setup', 'Basic analytics'],
+        itemsShort: ['Design', 'Mobile', 'SEO', 'SSL', 'Forms', 'Domain', 'Analytics'],
       },
       workflow: {
         badge: 'Process',
         title: 'How we work',
         steps: ['Consultation', 'Business analysis', 'Design', 'Development', 'Testing', 'Launch'],
+        stepsShort: ['Consultation', 'Analysis', 'Design', 'Development', 'Testing', 'Launch'],
       },
       faq: {
         badge: 'FAQ',

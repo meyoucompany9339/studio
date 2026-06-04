@@ -362,6 +362,15 @@ body {
 }
 
 @media (max-width: 767px) {
+  .pricing-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .pricing-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
   .site-footer__shade {
     height: 4.5rem;
   }
