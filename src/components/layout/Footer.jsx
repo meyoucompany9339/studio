@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Send, Mail, Phone, ChevronRight } from 'lucide-react'
+import { Send, Mail, /* Phone, */ ChevronRight } from 'lucide-react'
 import Logo from '../brand/Logo'
 import { SITE } from '../../config/site'
 import { useTranslation } from '../../i18n/LanguageProvider'
@@ -140,7 +140,7 @@ export default function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href={`tel:${SITE.phone.replace(/\s/g, '')}`}
                   className={`group inline-flex items-center gap-2 text-sm text-muted ${linkDesktop}`}
@@ -148,7 +148,7 @@ export default function Footer() {
                   <Phone className="h-4 w-4 text-[#FF8C00]" />
                   {SITE.phone}
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
