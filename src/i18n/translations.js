@@ -116,6 +116,7 @@ export const translations = {
     },
     footer: {
       desc: 'професійні сайти для бізнесу без авансу за розробку. Працюємо прозоро, на результат і з повним супроводом.',
+      website: 'Наш сайт',
       rights: 'Усі права захищені.',
       privacy: 'Політика конфіденційності',
       terms: 'Умови співпраці',
@@ -309,6 +310,7 @@ export const translations = {
     },
     footer: {
       desc: 'professional business websites with no upfront development fee. Transparent, results-driven work with full support.',
+      website: 'Our website',
       rights: 'All rights reserved.',
       privacy: 'Privacy policy',
       terms: 'Terms of cooperation',

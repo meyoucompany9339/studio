@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Send, Mail, /* Phone, */ ChevronRight } from 'lucide-react'
+import { Send, Mail, Instagram, Globe, /* Phone, */ ChevronRight } from 'lucide-react'
 import Logo from '../brand/Logo'
 import { SITE } from '../../config/site'
 import { useTranslation } from '../../i18n/LanguageProvider'
@@ -46,6 +46,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
+                  href={SITE.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-1.5 text-[11px] leading-tight ${linkMobile}`}
+                >
+                  <Globe className="h-3.5 w-3.5 shrink-0 text-[#FF8C00]" />
+                  <span>{t('footer.website')}</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href={SITE.telegram}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,6 +64,17 @@ export default function Footer() {
                 >
                   <Send className="h-3.5 w-3.5 shrink-0 text-[#FF8C00]" />
                   <span>Telegram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-1.5 text-[11px] leading-tight ${linkMobile}`}
+                >
+                  <Instagram className="h-3.5 w-3.5 shrink-0 text-[#FF8C00]" />
+                  <span>@elmejortech</span>
                 </a>
               </li>
               <li>
@@ -122,6 +144,17 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
+                  href={SITE.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group inline-flex items-center gap-2 text-sm text-muted ${linkDesktop}`}
+                >
+                  <Globe className="h-4 w-4 text-[#FF8C00]" />
+                  {t('footer.website')}
+                </a>
+              </li>
+              <li>
+                <a
                   href={SITE.telegram}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -129,6 +162,17 @@ export default function Footer() {
                 >
                   <Send className="h-4 w-4 text-[#FF8C00]" />
                   Telegram
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group inline-flex items-center gap-2 text-sm text-muted ${linkDesktop}`}
+                >
+                  <Instagram className="h-4 w-4 text-[#FF8C00]" />
+                  @elmejortech
                 </a>
               </li>
               <li>
