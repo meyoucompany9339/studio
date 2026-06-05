@@ -112,7 +112,7 @@ export const translations = {
       desc: 'Із задоволенням відповімо на всі запитання та допоможемо обрати найкраще рішення для вашого бізнесу.',
       telegram: 'Написати в Telegram',
       consult: 'Замовити консультацію',
-      emailSubject: 'Консультація — AUREA Studio',
+      emailSubject: 'Консультація — El Mejor Studio',
     },
     footer: {
       desc: 'професійні сайти для бізнесу без авансу за розробку. Працюємо прозоро, на результат і з повним супроводом.',
@@ -188,8 +188,8 @@ export const translations = {
       },
     },
     meta: {
-      title: 'AUREA Studio — Преміальні сайти для бізнесу від 0€',
-      description: 'AUREA Studio — преміальні сайти для бізнесу від 0€. Без авансу за розробку. Сайти під ключ.',
+      title: 'El Mejor Studio — Преміальні сайти для бізнесу від 0€',
+      description: 'El Mejor Studio — преміальні сайти для бізнесу від 0€. Без авансу за розробку. Сайти під ключ.',
     },
   },
   en: {
@@ -305,7 +305,7 @@ export const translations = {
       desc: 'We’ll answer your questions and help you choose the best solution for your business.',
       telegram: 'Message on Telegram',
       consult: 'Book a consultation',
-      emailSubject: 'Consultation — AUREA Studio',
+      emailSubject: 'Consultation — El Mejor Studio',
     },
     footer: {
       desc: 'professional business websites with no upfront development fee. Transparent, results-driven work with full support.',
@@ -381,8 +381,8 @@ export const translations = {
       },
     },
     meta: {
-      title: 'AUREA Studio — Premium business websites from €0',
-      description: 'AUREA Studio — premium business websites from €0. No upfront development fee. Turnkey websites.',
+      title: 'El Mejor Studio — Premium business websites from €0',
+      description: 'El Mejor Studio — premium business websites from €0. No upfront development fee. Turnkey websites.',
     },
   },
 }
