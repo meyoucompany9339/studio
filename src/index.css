@@ -25,6 +25,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html[lang='ar'] body,
+html[lang='ar'] .font-display {
+  font-family: 'Noto Sans Arabic', var(--font-sans);
+}
+
 ::selection {
   background-color: rgb(255 140 0 / 0.35);
   color: #fff;
