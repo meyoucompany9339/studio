@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
-import { getTranslation, SUPPORTED_LOCALES, translations } from './translations'
+import { getTranslation, SUPPORTED_LOCALES } from './translations'
 
 const STORAGE_KEY = 'aurea-locale'
 
@@ -27,10 +27,6 @@ export function LanguageProvider({ children }) {
   useEffect(() => {
     document.documentElement.lang = locale
     document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr'
-    const meta = translations[locale]?.meta
-    if (meta?.title) document.title = meta.title
-    const desc = document.querySelector('meta[name="description"]')
-    if (desc && meta?.description) desc.setAttribute('content', meta.description)
   }, [locale])
 
   const value = useMemo(() => ({ locale, setLocale, t }), [locale, setLocale, t])

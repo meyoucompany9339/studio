@@ -2,6 +2,7 @@ export const SITE = {
   name: 'El Mejor Studio',
   shortName: 'El Mejor',
   tagline: 'Веб-студія',
+  origin: 'https://elmejorstudio.com',
   telegram: 'https://t.me/PBMBarcelona',
   instagram: 'https://www.instagram.com/elmejortech/',
   website: 'https://mejortech.vercel.app/#menu',

@@ -3,10 +3,12 @@ import Header from './Header'
 import Footer from './Footer'
 import ScrollToTop from './ScrollToTop'
 import ScrollToHash from './ScrollToHash'
+import Seo from '../seo/Seo'
 
 export default function Layout() {
   return (
     <div className="flex min-h-screen flex-col">
+      <Seo />
       <ScrollToTop />
       <ScrollToHash />
       <Header />

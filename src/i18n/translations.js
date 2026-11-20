@@ -406,8 +406,16 @@ export const translations = {
       }
     },
     meta: {
-      title: 'El Mejor Studio — Преміальні сайти для бізнесу від $0',
-      description: 'El Mejor Studio — сайти під ключ без авансу. Викуп з 12 місяцями обслуговування в подарунок або сайт як сервіс від $0 зі щомісячним супроводом.'
+      home: {
+        title: 'El Mejor Studio — Преміальні сайти для бізнесу від $0',
+        description:
+          'El Mejor Studio — сайти під ключ без авансу. Викуп з 12 місяцями обслуговування в подарунок або сайт як сервіс від $0 зі щомісячним супроводом.'
+      },
+      cooperation: {
+        title: 'El Mejor Studio — Формати співпраці та вартість',
+        description:
+          'Порівняйте викуп готового сайту та формат «сайт як сервіс»: умови, орієнтовні ціни, обслуговування та FAQ від El Mejor Studio.'
+      }
     },
   },
   en: {
@@ -817,8 +825,16 @@ export const translations = {
       }
     },
     meta: {
-      title: 'El Mejor Studio — Premium business websites from $0',
-      description: 'El Mejor Studio — turnkey websites with no upfront fee. Buyout with 12 months of maintenance included, or site as a service from $0 with monthly care.'
+      home: {
+        title: 'El Mejor Studio — Premium business websites from $0',
+        description:
+          'El Mejor Studio — turnkey websites with no upfront fee. Buyout with 12 months of maintenance included, or site as a service from $0 with monthly care.'
+      },
+      cooperation: {
+        title: 'El Mejor Studio — Cooperation formats and pricing',
+        description:
+          'Compare full buyout and site-as-a-service formats: terms, indicative pricing, maintenance, and FAQ from El Mejor Studio.'
+      }
     },
   },
   ar: {
@@ -1228,11 +1244,19 @@ export const translations = {
       }
     },
     meta: {
-      title: 'El Mejor Studio — مواقع أعمال متميزة من $0',
-      description: 'El Mejor Studio — مواقع متكاملة دون دفعة مقدمة. شراء مع 12 شهر صيانة هدية أو الموقع كخدمة من $0 مع متابعة شهرية.'
+      home: {
+        title: 'El Mejor Studio — مواقع أعمال متميزة من $0',
+        description:
+          'El Mejor Studio — مواقع متكاملة دون دفعة مقدمة. شراء مع 12 شهر صيانة هدية أو الموقع كخدمة من $0 مع متابعة شهرية.'
+      },
+      cooperation: {
+        title: 'El Mejor Studio — صيغ التعاون والتسعير',
+        description:
+          'قارن بين شراء الموقع الجاهز وصيغة الموقع كخدمة: الشروط والأسعار التقريبية والصيانة والأسئلة الشائعة من El Mejor Studio.'
+      }
     },
-  }
-  }
+  },
+}
 
 export const SUPPORTED_LOCALES = ['uk', 'en', 'ar']
 
