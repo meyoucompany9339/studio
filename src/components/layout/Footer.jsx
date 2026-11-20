@@ -10,11 +10,6 @@ const linkDesktop = 'transition hover:text-[#FFB347]'
 export default function Footer() {
   const { t } = useTranslation()
 
-  const legal = [
-    { label: t('footer.privacy'), href: '#' },
-    { label: t('footer.terms'), href: '#' },
-  ]
-
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/spivpratsia', label: t('nav.formats') },
@@ -83,7 +78,7 @@ export default function Footer() {
                   className={`inline-flex min-w-0 items-center gap-1.5 text-[10px] leading-tight ${linkMobile}`}
                 >
                   <Mail className="h-3.5 w-3.5 shrink-0 text-[#FF8C00]" />
-                  <span className="whitespace-nowrap">{SITE.email}</span>
+                  <span className="break-all">{SITE.email}</span>
                 </a>
               </li>
             </ul>
@@ -100,7 +95,7 @@ export default function Footer() {
                     to={to}
                     className={`inline-flex items-center gap-0.5 text-[11px] leading-tight ${linkMobile}`}
                   >
-                    <ChevronRight className="h-3 w-3 shrink-0 text-[#FF8C00]" strokeWidth={2} />
+                    <ChevronRight className="h-3 w-3 shrink-0 text-[#FF8C00] rtl:-scale-x-100" strokeWidth={2} />
                     <span>{label}</span>
                   </Link>
                 </li>
@@ -109,20 +104,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-4 space-y-2 border-t border-white/[0.06] pt-4 text-center">
+        <div className="mt-4 border-t border-white/[0.06] pt-4 text-center">
           <p className="text-[11px] leading-snug text-muted">
             © {new Date().getFullYear()} {SITE.name}. {t('footer.rights')}
-          </p>
-          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] text-muted">
-            <a href={legal[0].href} className={linkMobile}>
-              {legal[0].label}
-            </a>
-            <span className="text-white/25" aria-hidden>
-              |
-            </span>
-            <a href={legal[1].href} className={linkMobile}>
-              {legal[1].label}
-            </a>
           </p>
         </div>
       </div>
@@ -230,17 +214,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-6 sm:flex-row">
-          <p className="text-sm text-muted">
+        <div className="mt-6 border-t border-white/[0.06] pt-6">
+          <p className="text-center text-sm text-muted sm:text-start">
             © {new Date().getFullYear()} {SITE.name}. {t('footer.rights')}
           </p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted">
-            {legal.map(({ label, href }) => (
-              <a key={label} href={href} className={linkDesktop}>
-                {label}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

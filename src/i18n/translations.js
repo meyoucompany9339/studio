@@ -12,6 +12,8 @@ export const translations = {
       reviews: 'Відгуки',
       contacts: 'Контакти',
       navigation: 'Навігація',
+      menu: 'Меню',
+      logoHome: 'на головну',
     },
     lang: {
       switchToEn: 'Перемкнути на англійську',
@@ -24,40 +26,84 @@ export const translations = {
     },
     hero: {
       title: 'Преміальні сайти для бізнесу',
-      titleAccent: 'від 0€',
-      desc: 'Створимо сучасний сайт під ключ без авансових платежів за розробку. Ви оплачуєте лише після запуску та обираєте зручний формат співпраці.',
-      ctaFormats: 'Обрати формат співпраці',
-      ctaMore: 'Дізнатися більше',
+      titleAccent: 'від $0',
+      desc: 'Створюємо сучасні сайти під ключ без авансових платежів. Оберіть зручний формат: розробка за $0 зі щомісячним обслуговуванням або повна оплата готового сайту з роком підтримки в подарунок.',
+      ctaDiscuss: 'Обговорити проєкт',
+      ctaCompare: 'Порівняти формати',
       perks: {
         noDeposit: 'Без авансу',
-        launch: 'Запуск за 2–4 тижні',
-        design: 'Індивідуальний дизайн',
-        support: 'Підтримка після запуску',
-      },
+        ownership: 'Повна власність при викупі',
+        gift: '12 міс. обслуговування в подарунок',
+        support: 'Технічний супровід'
+      }
     },
     trust: {
       badge: 'Довіра',
-      title: 'Цифри, яким можна довіряти',
-      desc: 'Прозора робота, передбачувані терміни та підтримка на кожному етапі.',
-      stats: {
-        sites: { value: '50+', label: 'сайтів запущено', desc: 'Реальні проєкти для бізнесу', mobileLine: '50+' },
-        weeks: { value: 'до 4', suffix: 'тижнів', label: 'на запуск', desc: 'Чіткий таймлайн без затягувань', mobileLine: '4 тижні' },
-        clients: { value: '98%', label: 'задоволених клієнтів', desc: 'Працюємо на результат', mobileLine: '98%' },
-        support: { label: 'Підтримка після запуску', desc: 'Не залишаємо вас самі з технічними питаннями', mobileLine: '24/7' },
-      },
+      title: 'Чому з нами зручно працювати',
+      desc: 'Прозорі умови, індивідуальний підхід і технічний супровід після запуску.',
+      items: [
+        {
+          title: 'Без авансової оплати',
+          desc: 'Розробка починається без передоплати за створення сайту'
+        },
+        {
+          title: 'Прозорі умови',
+          desc: 'Формати співпраці та орієнтовна вартість зрозумілі ще до старту'
+        },
+        {
+          title: 'Індивідуальний підхід',
+          desc: 'Рішення під ваш бізнес, функціонал і бюджет'
+        },
+        {
+          title: 'Технічний супровід',
+          desc: 'Підтримка після запуску — за форматом співпраці'
+        }
+      ]
     },
     benefits: {
       badge: 'Переваги',
       title: 'Чому обирають нас',
-      desc: 'Поєднуємо якість топової студії з гнучкими умовами для вашого бізнесу.',
+      desc: 'Поєднуємо якість студії з гнучкими умовами для вашого бізнесу.',
       items: [
-        { title: 'Швидкий запуск', description: 'Сайт готовий за 2–4 тижні з чітким таймлайном' },
-        { title: 'Індивідуальний дизайн', description: 'Унікальний візуал під ваш бренд, без шаблонів' },
-        { title: 'Адаптивність', description: 'Бездоганний вигляд на телефоні та десктопі' },
-        { title: 'SEO оптимізація', description: 'Підготовка до пошукових систем з першого дня' },
-        { title: 'Без ризику', description: 'Оплата лише після запуску готового сайту' },
-        { title: 'Підтримка', description: 'Технічний супровід після публікації' },
-      ],
+        {
+          title: 'Без авансу за розробку',
+          description: 'Оплата — після погодженого результату або в межах сервісної моделі'
+        },
+        {
+          title: 'Індивідуальний дизайн',
+          description: 'Унікальний візуал під ваш бренд, без шаблонів'
+        },
+        {
+          title: 'Адаптивність',
+          description: 'Коректний вигляд на телефоні та десктопі'
+        },
+        {
+          title: 'Базова SEO-підготовка',
+          description: 'Технічна основа для пошукових систем'
+        },
+        {
+          title: 'Два формати співпраці',
+          description: 'Викуп з подарунковим роком або сайт як сервіс'
+        },
+        {
+          title: 'Технічний супровід',
+          description: 'Оновлення, підтримка та стабільна робота сайту'
+        }
+      ]
+    },
+    formatsTeaser: {
+      badge: 'Співпраця',
+      title: 'Оберіть зручний формат',
+      desc: 'Дві прозорі моделі — під ваш бюджет і цілі.',
+      more: 'Детальніше про формати',
+      buyout: {
+        title: 'Викуп готового сайту',
+        desc: 'Оплата після завершення · повна власність · 12 місяців обслуговування в подарунок'
+      },
+      saas: {
+        title: 'Сайт як сервіс',
+        desc: 'Розробка $0 · обслуговування $299–499/місяць · договір на 12 місяців'
+      }
     },
     latestWorks: {
       badge: 'Портфоліо',
@@ -97,103 +143,265 @@ export const translations = {
         { text: 'Професійний підхід, чіткі терміни та підтримка після запуску.', author: 'Дмитро С.', role: 'Будівельна компанія' },
       ],
     },
-    guarantees: {
-      badge: 'Гарантії',
-      title: 'Наші гарантії',
-      desc: 'Ви отримуєте не просто сайт, а надійне digital-рішення з повним супроводом.',
-      items: [
-        { title: 'Без прихованих платежів', desc: 'Прозора вартість після консультації' },
-        { title: 'Унікальний дизайн', desc: 'Не шаблони — індивідуальний візуал' },
-        { title: 'Повна адаптація під мобільні', desc: 'Ідеально на всіх екранах' },
-        { title: 'SEO-підготовка', desc: 'Базова оптимізація вже в пакеті' },
-        { title: 'Технічна підтримка', desc: 'Супровід після запуску' },
-        { title: 'Безпечний хостинг', desc: 'SSL, резервні копії, стабільність' },
-      ],
-    },
     contact: {
       title: 'Готові обговорити ваш проєкт?',
-      desc: 'Із задоволенням відповімо на всі запитання та допоможемо обрати найкраще рішення для вашого бізнесу.',
-      telegram: 'Написати в Telegram',
-      consult: 'Замовити консультацію',
-      emailSubject: 'Консультація — El Mejor Studio',
+      desc: 'Залиште заявку на сайті — ми відповімо на email. Telegram залишається додатковим каналом.',
+      openForm: 'Залишити заявку',
+      telegram: 'Telegram',
+      consult: 'Залишити заявку',
+      emailSubject: 'Обговорення проєкту — El Mejor Studio',
+      form: {
+        badge: 'Заявка',
+        title: 'Обговорити проєкт',
+        desc: 'Заповніть форму — ми відповімо на ваш email.',
+        close: 'Закрити',
+        name: "Ім'я",
+        email: 'Email',
+        siteType: 'Тип сайту',
+        siteTypePlaceholder: 'Оберіть тип',
+        siteTypes: {
+          visitka: 'Сайт-візитка',
+          corporate: 'Корпоративний сайт',
+          shop: 'Інтернет-магазин',
+          other: 'Інший проєкт'
+        },
+        format: 'Формат співпраці',
+        formats: {
+          buyout: 'Викуп готового сайту',
+          saas: 'Сайт як сервіс',
+          consult: 'Потрібна консультація'
+        },
+        message: 'Повідомлення',
+        messagePlaceholder: 'Коротко опишіть проєкт, цілі та побажання',
+        messageHint: 'Кілька речень достатньо',
+        privacy:
+          'Контактні дані використовуємо лише для відповіді на цю заявку. Окрема політика конфіденційності буде додана перед публічним запуском форми.',
+        submit: 'Надіслати заявку',
+        sending: 'Надсилаємо…',
+        successTitle: 'Заявку надіслано',
+        successDesc: 'Дякуємо! Ми відповімо на вказаний email найближчим часом.',
+        sendAnother: 'Надіслати ще одну заявку',
+        sendError: 'Не вдалося надіслати заявку. Перевірте з’єднання та спробуйте ще раз.',
+        configError:
+          'Форма ще не підключена до пошти студії. Додайте ключі EmailJS у середовище або напишіть нам у Telegram.',
+        retry: 'Спробувати знову',
+        errors: {
+          nameRequired: "Вкажіть ім'я",
+          nameLong: "Ім'я занадто довге",
+          emailRequired: 'Вкажіть email',
+          emailInvalid: 'Введіть коректний email',
+          siteTypeRequired: 'Оберіть тип сайту',
+          formatRequired: 'Оберіть формат співпраці',
+          messageRequired: 'Додайте коротке повідомлення',
+          messageLong: 'Повідомлення занадто довге'
+        }
+      }
     },
     footer: {
-      desc: 'професійні сайти для бізнесу без авансу за розробку. Працюємо прозоро, на результат і з повним супроводом.',
+      desc: 'професійні сайти для бізнесу без авансу за розробку. Два формати співпраці, прозорі умови та технічний супровід.',
       website: 'Наш сайт',
-      rights: 'Усі права захищені.',
-      privacy: 'Політика конфіденційності',
-      terms: 'Умови співпраці',
+      rights: 'Усі права захищені.'
     },
     cooperation: {
-      heroTitle: 'Як це',
-      heroAccent: 'працює',
-      heroDesc: 'Створюємо сайт за власний рахунок — ви обираєте формат співпраці після запуску.',
+      heroTitle: 'Оберіть',
+      heroAccent: 'формат',
+      heroDesc: 'Два прозорі формати співпраці: викуп готового сайту або сайт як сервіс.',
       intro1: 'Ми створюємо сайт',
-      intro1accent: 'повністю за власний рахунок',
-      intro2: 'Після запуску ви обираєте один із форматів співпраці.',
+      intro1accent: 'без авансу за розробку',
+      intro2: 'Далі ви обираєте викуп із подарунковим роком обслуговування або сервісну модель зі щомісячною оплатою.',
       formats: {
         badge: 'Співпраця',
         title: 'Формати співпраці',
-        desc: 'Оберіть модель, яка відповідає вашим цілям після запуску сайту.',
+        desc: 'Коротко про умови. Деталі фіксуються в індивідуальному договорі.',
+        cta: 'Обговорити проєкт',
         buyout: {
-          variant: 'Варіант 1',
-          title: 'Ви викуповуєте сайт',
-          points: ['Одноразова оплата', 'Повне право власності', 'Усі вихідні файли', 'Повний контроль над сайтом', 'Можливість перенесення на будь-який хостинг'],
+          variant: 'Формат 1',
+          title: 'Ваш сайт — ваша власність',
+          summary: 'Оплачуйте розробку після завершення роботи та отримайте 12 місяців обслуговування в подарунок.',
+          gift: '12 місяців обслуговування в подарунок',
+          points: [
+            'Оплата після завершення',
+            'Повне право власності після оплати',
+            'Усі вихідні файли',
+            'Можливість перенесення на інший хостинг',
+            '12 місяців погодженого обслуговування безкоштовно',
+            'Після року підтримка необов’язкова'
+          ]
         },
         saas: {
-          variant: 'Варіант 2',
-          title: 'Сайт як сервіс',
-          points: ['Щомісячна оплата', 'Хостинг включено', 'Технічна підтримка', 'Резервне копіювання', 'Оновлення системи', 'Постійний супровід'],
-        },
+          variant: 'Формат 2',
+          title: 'Професійний сайт за $0',
+          summary: 'Ми розробляємо сайт без початкової оплати. Ви сплачуєте лише за його щомісячне обслуговування.',
+          note: 'Сайт залишається власністю студії. Умови можливого викупу обговорюються індивідуально.',
+          points: [
+            'Розробка за $0',
+            'Обслуговування $299–499/місяць',
+            'Договір на 12 місяців',
+            'Технічна підтримка',
+            'Оновлення та резервне копіювання'
+          ]
+        }
       },
       pricing: {
         badge: 'Вартість',
         title: 'Орієнтовна вартість',
-        desc: 'Точна вартість визначається після консультації та аналізу проєкту.',
+        desc: 'Остаточна вартість залежить від функціоналу, складності та індивідуальних вимог проєкту.',
         popular: 'Популярно',
         from: 'від',
         perMonth: '/місяць',
         plans: {
           visitka: 'Сайт-візитка',
           corporate: 'Корпоративний сайт',
-          shop: 'Інтернет-магазин',
-          saas: 'Сайт як сервіс',
+          shop: 'Інтернет-магазин'
         },
         plansShort: {
           visitka: 'Сайт-візитка',
           corporate: 'Корпоративний',
-          shop: 'Магазин',
-          saas: 'Сервіс',
-        },
-        prices: { visitka: '150€', corporate: '799€', shop: '1099€', saas: '49€' },
+          shop: 'Магазин'
+        }
+      },
+      maintenance: {
+        badge: 'Обслуговування',
+        title: 'Ми дбаємо про ваш сайт після запуску',
+        desc: 'Технічний супровід, оновлення та підтримка, щоб ваш сайт залишався стабільним, безпечним і готовим до роботи.',
+        priceLabel: 'Вартість',
+        priceNote: 'Точна сума залежить від розміру та функціоналу сайту.',
+        giftNote: 'При повному викупі сайту — перші 12 місяців погодженого обслуговування в подарунок.',
+        items: [
+          {
+            title: 'Технічна підтримка',
+            desc: 'Допомога з технічними питаннями після запуску'
+          },
+          {
+            title: 'Оновлення системи',
+            desc: 'Актуальні оновлення в межах погодженого обсягу'
+          },
+          {
+            title: 'Резервне копіювання',
+            desc: 'Регулярні бекапи для збереження даних'
+          },
+          {
+            title: 'Моніторинг роботи',
+            desc: 'Контроль доступності та базових показників'
+          },
+          {
+            title: 'Контроль безпеки',
+            desc: 'Базові перевірки та усунення технічних ризиків'
+          },
+          {
+            title: 'Виправлення помилок',
+            desc: 'Усунення технічних збоїв у межах договору'
+          },
+          {
+            title: 'Оптимізація продуктивності',
+            desc: 'Поліпшення швидкодії за потреби'
+          },
+          {
+            title: 'Узгоджені зміни контенту',
+            desc: 'Оновлення матеріалів у погодженому обсязі'
+          }
+        ]
       },
       included: {
-        badge: 'Пакет',
-        title: 'Що входить у кожен сайт',
-        desc: 'Повний базовий набір — у кожному проєкті без прихованих доплат за розробку.',
-        items: ['Індивідуальний дизайн', 'Адаптація під телефон', 'SEO-оптимізація', 'SSL-захист', 'Форми заявок', 'Підключення домену', 'Базова аналітика'],
-        itemsShort: ['Дизайн', 'Адаптація', 'SEO', 'SSL', 'Форми', 'Домен', 'Аналітика'],
+        badge: 'Розробка',
+        title: 'Що входить у розробку сайту',
+        desc: 'Базовий обсяг і додаткові можливості залежно від типу проєкту.',
+        baseTitle: 'Базові можливості',
+        extraTitle: 'Додаткові можливості',
+        base: [
+          'Адаптивний дизайн',
+          'Оптимізація для мобільних пристроїв',
+          'Базова SEO-підготовка',
+          'Тестування',
+          'Публікація сайту',
+          'Базові налаштування безпеки'
+        ],
+        extra: [
+          'Особистий кабінет',
+          'Інтернет-магазин',
+          'Платіжні інтеграції',
+          'Адміністративна панель',
+          'CRM',
+          'Складні API',
+          'Багатомовність',
+          'Індивідуальні інтеграції'
+        ],
+        extraNote: 'Додаткові можливості узгоджуються окремо та впливають на вартість.'
       },
       workflow: {
         badge: 'Процес',
         title: 'Як ми працюємо',
-        steps: ['Консультація', 'Аналіз бізнесу', 'Дизайн', 'Розробка', 'Тестування', 'Запуск'],
-        stepsShort: ['Консультація', 'Аналіз', 'Дизайн', 'Розробка', 'Тестування', 'Запуск'],
+        steps: [
+          'Консультація',
+          'Аналіз бізнесу',
+          'Дизайн',
+          'Розробка',
+          'Тестування',
+          'Запуск'
+        ],
+        stepsShort: [
+          'Консультація',
+          'Аналіз',
+          'Дизайн',
+          'Розробка',
+          'Тестування',
+          'Запуск'
+        ]
       },
       faq: {
         badge: 'FAQ',
         title: 'Часті запитання',
         items: [
-          { question: 'Чи справді розробка безкоштовна?', answer: 'Так. Ми не беремо аванс за дизайн і розробку — інвестуємо в створення вашого сайту самостійно. Ви починаєте оплату лише після запуску за обраним форматом співпраці.' },
-          { question: 'Коли я плачу?', answer: 'Після узгодження проєкту, завершення розробки та публікації сайту. Далі — або щомісячна підписка (сайт як сервіс), або викуп за фіксованою сумою.' },
-          { question: 'Чи можу я викупити сайт?', answer: 'Так. У будь-який момент можна перейти на формат викупу: одноразова оплата, повна передача прав, вихідних файлів і доступів.' },
-          { question: 'Чи можу перейти з сервісної моделі на викуп?', answer: 'Звісно. Багато клієнтів починають із підписки, а потім викуповують сайт, коли переконаються в результаті. Умови викупу обговорюємо індивідуально.' },
-        ],
-      },
+          {
+            question: 'Як працює розробка сайту за $0?',
+            answer: 'У форматі «Сайт як сервіс» ми створюємо сайт без початкової оплати за розробку. Ви сплачуєте щомісячне обслуговування за договором на 12 місяців.'
+          },
+          {
+            question: 'Чому розробка може бути безкоштовною?',
+            answer: 'Ми інвестуємо в створення сайту й отримуємо оплату через щомісячне обслуговування або через викуп готового результату — без авансу за розробку.'
+          },
+          {
+            question: 'Скільки коштує обслуговування?',
+            answer: 'Орієнтовно $299–499 на місяць. Точна сума залежить від розміру сайту, функціоналу та обсягу супроводу.'
+          },
+          {
+            question: 'На який термін укладається договір?',
+            answer: 'Для формату «Сайт як сервіс» договір укладається на 12 місяців. Інші деталі погоджуються індивідуально.'
+          },
+          {
+            question: 'Чи переходить сайт у власність клієнта при форматі «Сайт як сервіс»?',
+            answer: 'Ні. У цьому форматі сайт залишається власністю студії. Автоматичного переходу прав після 12 місяців немає.'
+          },
+          {
+            question: 'Чи можна викупити сайт?',
+            answer: 'Так. Ви можете обрати формат викупу від початку або обговорити викуп індивідуально, якщо починали з сервісної моделі.'
+          },
+          {
+            question: 'Коли потрібно оплачувати розробку при повному викупі?',
+            answer: 'Після завершення розробки та погодженого приймання результату — без авансового платежу за розробку.'
+          },
+          {
+            question: 'Що входить у 12 місяців подарункового обслуговування?',
+            answer: 'Погоджений технічний супровід після викупу: підтримка, оновлення та стабільна робота сайту в межах договору. Деталі фіксуються індивідуально.'
+          },
+          {
+            question: 'Що відбувається після завершення подарункового року?',
+            answer: 'Ви самостійно вирішуєте, чи продовжувати платне обслуговування. Обов’язкової підписки немає.'
+          },
+          {
+            question: 'Чи можу я перенести викуплений сайт на інший хостинг?',
+            answer: 'Так. Після повної оплати викупу ви отримуєте права та можливість перенесення.'
+          },
+          {
+            question: 'Скільки часу займає розробка?',
+            answer: 'Терміни залежать від обсягу та складності. Орієнтовний таймлайн узгоджуємо після аналізу проєкту.'
+          }
+        ]
+      }
     },
     meta: {
-      title: 'El Mejor Studio — Преміальні сайти для бізнесу від 0€',
-      description: 'El Mejor Studio — преміальні сайти для бізнесу від 0€. Без авансу за розробку. Сайти під ключ.',
+      title: 'El Mejor Studio — Преміальні сайти для бізнесу від $0',
+      description: 'El Mejor Studio — сайти під ключ без авансу. Викуп з 12 місяцями обслуговування в подарунок або сайт як сервіс від $0 зі щомісячним супроводом.'
     },
   },
   en: {
@@ -209,6 +417,8 @@ export const translations = {
       reviews: 'Reviews',
       contacts: 'Contact',
       navigation: 'Navigation',
+      menu: 'Menu',
+      logoHome: 'go to home',
     },
     lang: {
       switchToEn: 'Switch to English',
@@ -221,40 +431,84 @@ export const translations = {
     },
     hero: {
       title: 'Premium business websites',
-      titleAccent: 'from €0',
-      desc: 'We build a modern turnkey website with no upfront development fees. You pay only after launch and choose the cooperation format that suits you.',
-      ctaFormats: 'Choose cooperation format',
-      ctaMore: 'Learn more',
+      titleAccent: 'from $0',
+      desc: 'We build modern turnkey websites with no upfront development fees. Choose your format: development for $0 with monthly maintenance, or full payment for a finished site with a year of support included.',
+      ctaDiscuss: 'Discuss your project',
+      ctaCompare: 'Compare formats',
       perks: {
-        noDeposit: 'No upfront payment',
-        launch: 'Launch in 2–4 weeks',
-        design: 'Custom design',
-        support: 'Post-launch support',
-      },
+        noDeposit: 'No upfront fee',
+        ownership: 'Full ownership on buyout',
+        gift: '12 months of maintenance free',
+        support: 'Technical support'
+      }
     },
     trust: {
       badge: 'Trust',
-      title: 'Numbers you can trust',
-      desc: 'Transparent work, predictable timelines, and support at every stage.',
-      stats: {
-        sites: { value: '50+', label: 'websites launched', desc: 'Real projects for businesses', mobileLine: '50+' },
-        weeks: { value: 'up to 4', suffix: 'weeks', label: 'to launch', desc: 'Clear timeline without delays', mobileLine: '4 weeks' },
-        clients: { value: '98%', label: 'satisfied clients', desc: 'We focus on results', mobileLine: '98%' },
-        support: { label: 'Post-launch support', desc: 'We won’t leave you alone with technical issues', mobileLine: '24/7' },
-      },
+      title: 'Why working with us is easy',
+      desc: 'Transparent terms, a tailored approach, and technical support after launch.',
+      items: [
+        {
+          title: 'No upfront payment',
+          desc: 'Development starts without a prepaid build fee'
+        },
+        {
+          title: 'Clear terms',
+          desc: 'Cooperation formats and estimated pricing are clear from the start'
+        },
+        {
+          title: 'Tailored approach',
+          desc: 'Solutions matched to your business, features, and budget'
+        },
+        {
+          title: 'Technical support',
+          desc: 'Post-launch care according to your chosen format'
+        }
+      ]
     },
     benefits: {
       badge: 'Benefits',
       title: 'Why clients choose us',
-      desc: 'Top-tier studio quality with flexible terms for your business.',
+      desc: 'Studio-quality delivery with flexible cooperation terms.',
       items: [
-        { title: 'Fast launch', description: 'Website ready in 2–4 weeks with a clear timeline' },
-        { title: 'Custom design', description: 'Unique visuals for your brand, no templates' },
-        { title: 'Responsive', description: 'Flawless on mobile and desktop' },
-        { title: 'SEO optimization', description: 'Search-ready from day one' },
-        { title: 'No risk', description: 'Pay only after your site goes live' },
-        { title: 'Support', description: 'Technical care after publication' },
-      ],
+        {
+          title: 'No upfront development fee',
+          description: 'Pay after an approved result or under the service model'
+        },
+        {
+          title: 'Custom design',
+          description: 'Unique visuals for your brand — no templates'
+        },
+        {
+          title: 'Responsive',
+          description: 'Reliable experience on mobile and desktop'
+        },
+        {
+          title: 'Basic SEO setup',
+          description: 'Technical foundation for search engines'
+        },
+        {
+          title: 'Two cooperation formats',
+          description: 'Buyout with a gift year, or site as a service'
+        },
+        {
+          title: 'Technical maintenance',
+          description: 'Updates, support, and stable site performance'
+        }
+      ]
+    },
+    formatsTeaser: {
+      badge: 'Cooperation',
+      title: 'Choose a convenient format',
+      desc: 'Two clear models — matched to your goals and budget.',
+      more: 'Learn more about formats',
+      buyout: {
+        title: 'Buy out the finished site',
+        desc: 'Pay after completion · full ownership · 12 months of maintenance included'
+      },
+      saas: {
+        title: 'Site as a service',
+        desc: 'Development $0 · maintenance $299–499/month · 12-month agreement'
+      }
     },
     latestWorks: {
       badge: 'Portfolio',
@@ -294,103 +548,265 @@ export const translations = {
         { text: 'Professional approach, clear deadlines, and support after launch.', author: 'Dmytro S.', role: 'Construction company' },
       ],
     },
-    guarantees: {
-      badge: 'Guarantees',
-      title: 'Our guarantees',
-      desc: 'You get more than a website — a reliable digital solution with full support.',
-      items: [
-        { title: 'No hidden fees', desc: 'Transparent pricing after consultation' },
-        { title: 'Unique design', desc: 'No templates — custom visuals' },
-        { title: 'Full mobile adaptation', desc: 'Perfect on every screen' },
-        { title: 'SEO-ready', desc: 'Basic optimization included' },
-        { title: 'Technical support', desc: 'Care after launch' },
-        { title: 'Secure hosting', desc: 'SSL, backups, stability' },
-      ],
-    },
     contact: {
       title: 'Ready to discuss your project?',
-      desc: 'We’ll answer your questions and help you choose the best solution for your business.',
-      telegram: 'Message on Telegram',
-      consult: 'Book a consultation',
-      emailSubject: 'Consultation — El Mejor Studio',
+      desc: 'Leave a request on the site — we’ll reply by email. Telegram remains an extra channel.',
+      openForm: 'Send a request',
+      telegram: 'Telegram',
+      consult: 'Send a request',
+      emailSubject: 'Project discussion — El Mejor Studio',
+      form: {
+        badge: 'Request',
+        title: 'Discuss your project',
+        desc: 'Fill in the form — we’ll reply to your email.',
+        close: 'Close',
+        name: 'Name',
+        email: 'Email',
+        siteType: 'Site type',
+        siteTypePlaceholder: 'Choose a type',
+        siteTypes: {
+          visitka: 'Business card site',
+          corporate: 'Corporate website',
+          shop: 'Online store',
+          other: 'Other project'
+        },
+        format: 'Cooperation format',
+        formats: {
+          buyout: 'Buy out a finished site',
+          saas: 'Site as a service',
+          consult: 'Need a consultation'
+        },
+        message: 'Message',
+        messagePlaceholder: 'Briefly describe the project, goals, and preferences',
+        messageHint: 'A few sentences are enough',
+        privacy:
+          'We use your contact details only to reply to this request. A separate privacy policy will be added before the public launch of the form.',
+        submit: 'Send request',
+        sending: 'Sending…',
+        successTitle: 'Request sent',
+        successDesc: 'Thank you! We’ll reply to the email you provided soon.',
+        sendAnother: 'Send another request',
+        sendError: 'Could not send the request. Check your connection and try again.',
+        configError:
+          'The form is not connected to studio email yet. Add EmailJS keys to the environment, or reach us on Telegram.',
+        retry: 'Try again',
+        errors: {
+          nameRequired: 'Enter your name',
+          nameLong: 'Name is too long',
+          emailRequired: 'Enter your email',
+          emailInvalid: 'Enter a valid email',
+          siteTypeRequired: 'Choose a site type',
+          formatRequired: 'Choose a cooperation format',
+          messageRequired: 'Add a short message',
+          messageLong: 'Message is too long'
+        }
+      }
     },
     footer: {
-      desc: 'professional business websites with no upfront development fee. Transparent, results-driven work with full support.',
+      desc: 'professional business websites with no upfront development fee. Two cooperation formats, clear terms, and technical support.',
       website: 'Our website',
-      rights: 'All rights reserved.',
-      privacy: 'Privacy policy',
-      terms: 'Terms of cooperation',
+      rights: 'All rights reserved.'
     },
     cooperation: {
-      heroTitle: 'How it',
-      heroAccent: 'works',
-      heroDesc: 'We build the site at our expense — you choose the cooperation format after launch.',
-      intro1: 'We create your website',
-      intro1accent: 'entirely at our expense',
-      intro2: 'After launch, you choose one of the cooperation formats.',
+      heroTitle: 'Choose your',
+      heroAccent: 'format',
+      heroDesc: 'Two clear cooperation formats: buy out a finished site, or run it as a service.',
+      intro1: 'We build your website',
+      intro1accent: 'with no upfront development fee',
+      intro2: 'Then you choose buyout with a gift year of maintenance, or a service model with monthly payment.',
       formats: {
         badge: 'Cooperation',
         title: 'Cooperation formats',
-        desc: 'Choose the model that fits your goals after the site goes live.',
+        desc: 'Key terms in brief. Details are fixed in an individual agreement.',
+        cta: 'Discuss your project',
         buyout: {
-          variant: 'Option 1',
-          title: 'You buy out the site',
-          points: ['One-time payment', 'Full ownership', 'All source files', 'Full control of the site', 'Transfer to any hosting'],
+          variant: 'Format 1',
+          title: 'Your site — your ownership',
+          summary: 'Pay for development after completion and get 12 months of maintenance as a gift.',
+          gift: '12 months of maintenance as a gift',
+          points: [
+            'Payment after completion',
+            'Full ownership after payment',
+            'All source files',
+            'Transfer to another hosting possible',
+            '12 months of agreed maintenance free',
+            'After the first year, support is optional'
+          ]
         },
         saas: {
-          variant: 'Option 2',
-          title: 'Site as a service',
-          points: ['Monthly payment', 'Hosting included', 'Technical support', 'Backups', 'System updates', 'Ongoing care'],
-        },
+          variant: 'Format 2',
+          title: 'A professional site for $0',
+          summary: 'We build the site with no initial development fee. You pay only for monthly maintenance.',
+          note: 'The site remains studio property. Possible buyout terms are discussed individually.',
+          points: [
+            'Development for $0',
+            'Maintenance $299–499/month',
+            '12-month agreement',
+            'Technical support',
+            'Updates and backups'
+          ]
+        }
       },
       pricing: {
         badge: 'Pricing',
         title: 'Estimated pricing',
-        desc: 'Final cost is determined after consultation and project analysis.',
+        desc: 'Final cost depends on features, complexity, and project requirements.',
         popular: 'Popular',
         from: 'from',
         perMonth: '/month',
         plans: {
           visitka: 'Business card site',
           corporate: 'Corporate website',
-          shop: 'Online store',
-          saas: 'Site as a service',
+          shop: 'Online store'
         },
         plansShort: {
           visitka: 'Business card',
           corporate: 'Corporate',
-          shop: 'Store',
-          saas: 'SaaS',
-        },
-        prices: { visitka: '€150', corporate: '€799', shop: '€1099', saas: '€49' },
+          shop: 'Store'
+        }
+      },
+      maintenance: {
+        badge: 'Maintenance',
+        title: 'We take care of your site after launch',
+        desc: 'Technical support, updates, and care so your site stays stable, secure, and ready for business.',
+        priceLabel: 'Pricing',
+        priceNote: 'The exact amount depends on site size and functionality.',
+        giftNote: 'With a full buyout — the first 12 months of agreed maintenance are included as a gift.',
+        items: [
+          {
+            title: 'Technical support',
+            desc: 'Help with technical questions after launch'
+          },
+          {
+            title: 'System updates',
+            desc: 'Relevant updates within the agreed scope'
+          },
+          {
+            title: 'Backups',
+            desc: 'Regular backups to protect your data'
+          },
+          {
+            title: 'Uptime monitoring',
+            desc: 'Availability and basic performance checks'
+          },
+          {
+            title: 'Security checks',
+            desc: 'Basic reviews and technical risk mitigation'
+          },
+          {
+            title: 'Bug fixes',
+            desc: 'Resolving technical issues within the agreement'
+          },
+          {
+            title: 'Performance tuning',
+            desc: 'Speed improvements when needed'
+          },
+          {
+            title: 'Agreed content updates',
+            desc: 'Content changes within the agreed volume'
+          }
+        ]
       },
       included: {
-        badge: 'Package',
-        title: "What's included in every site",
-        desc: 'Full basic package in every project — no hidden development fees.',
-        items: ['Custom design', 'Mobile adaptation', 'SEO optimization', 'SSL security', 'Lead forms', 'Domain setup', 'Basic analytics'],
-        itemsShort: ['Design', 'Mobile', 'SEO', 'SSL', 'Forms', 'Domain', 'Analytics'],
+        badge: 'Development',
+        title: 'What’s included in website development',
+        desc: 'Base scope and optional capabilities depending on the project type.',
+        baseTitle: 'Base capabilities',
+        extraTitle: 'Additional capabilities',
+        base: [
+          'Responsive design',
+          'Mobile optimization',
+          'Basic SEO preparation',
+          'Testing',
+          'Website publication',
+          'Basic security setup'
+        ],
+        extra: [
+          'Personal account',
+          'Online store',
+          'Payment integrations',
+          'Admin panel',
+          'CRM',
+          'Complex APIs',
+          'Multilingual support',
+          'Custom integrations'
+        ],
+        extraNote: 'Additional capabilities are agreed separately and affect the final price.'
       },
       workflow: {
         badge: 'Process',
         title: 'How we work',
-        steps: ['Consultation', 'Business analysis', 'Design', 'Development', 'Testing', 'Launch'],
-        stepsShort: ['Consultation', 'Analysis', 'Design', 'Development', 'Testing', 'Launch'],
+        steps: [
+          'Consultation',
+          'Business analysis',
+          'Design',
+          'Development',
+          'Testing',
+          'Launch'
+        ],
+        stepsShort: [
+          'Consultation',
+          'Analysis',
+          'Design',
+          'Development',
+          'Testing',
+          'Launch'
+        ]
       },
       faq: {
         badge: 'FAQ',
         title: 'Frequently asked questions',
         items: [
-          { question: 'Is development really free?', answer: 'Yes. We don’t charge upfront for design and development — we invest in building your site. You start paying only after launch, under your chosen cooperation format.' },
-          { question: 'When do I pay?', answer: 'After the project is agreed, development is complete, and the site is published. Then either a monthly subscription (site as a service) or a one-time buyout.' },
-          { question: 'Can I buy out the site?', answer: 'Yes. You can switch to buyout anytime: one-time payment, full transfer of rights, source files, and access.' },
-          { question: 'Can I switch from subscription to buyout?', answer: 'Of course. Many clients start with a subscription and buy out the site once they see results. Buyout terms are discussed individually.' },
-        ],
-      },
+          {
+            question: 'How does website development for $0 work?',
+            answer: 'In the Site as a service format we build the website with no initial development fee. You pay monthly maintenance under a 12-month agreement.'
+          },
+          {
+            question: 'Why can development be free?',
+            answer: 'We invest in building the site and get paid through monthly maintenance or through buyout of the finished result — with no upfront development fee.'
+          },
+          {
+            question: 'How much does maintenance cost?',
+            answer: 'Typically $299–499 per month. The exact amount depends on site size, features, and support scope.'
+          },
+          {
+            question: 'How long is the agreement?',
+            answer: 'For Site as a service the agreement is for 12 months. Other details are agreed individually.'
+          },
+          {
+            question: 'Does the client own the site in the Site as a service format?',
+            answer: 'No. In this format the site remains studio property. Ownership does not transfer automatically after 12 months.'
+          },
+          {
+            question: 'Can I buy out the site?',
+            answer: 'Yes. You can choose buyout from the start, or discuss buyout individually if you began with the service model.'
+          },
+          {
+            question: 'When do I pay for development on a full buyout?',
+            answer: 'After development is complete and the result is accepted — with no upfront development fee.'
+          },
+          {
+            question: 'What is included in the 12 gift months of maintenance?',
+            answer: 'Agreed technical care after buyout: support, updates, and stable operation within the agreement. Details are fixed individually.'
+          },
+          {
+            question: 'What happens after the gift year ends?',
+            answer: 'You decide whether to continue paid maintenance. There is no mandatory subscription.'
+          },
+          {
+            question: 'Can I move a bought-out site to another hosting?',
+            answer: 'Yes. After full buyout payment you receive the rights and can transfer the site.'
+          },
+          {
+            question: 'How long does development take?',
+            answer: 'Timelines depend on scope and complexity. We agree on an estimated schedule after project analysis.'
+          }
+        ]
+      }
     },
     meta: {
-      title: 'El Mejor Studio — Premium business websites from €0',
-      description: 'El Mejor Studio — premium business websites from €0. No upfront development fee. Turnkey websites.',
+      title: 'El Mejor Studio — Premium business websites from $0',
+      description: 'El Mejor Studio — turnkey websites with no upfront fee. Buyout with 12 months of maintenance included, or site as a service from $0 with monthly care.'
     },
   },
   ar: {
@@ -406,6 +822,8 @@ export const translations = {
       reviews: 'الآراء',
       contacts: 'تواصل',
       navigation: 'التنقل',
+      menu: 'القائمة',
+      logoHome: 'إلى الرئيسية',
     },
     lang: {
       switchToEn: 'التبديل إلى الإنجليزية',
@@ -418,40 +836,84 @@ export const translations = {
     },
     hero: {
       title: 'مواقع أعمال متميزة',
-      titleAccent: 'من 0€',
-      desc: 'ننشئ موقعًا عصريًا متكاملًا دون دفعة مقدمة لتطويره. تدفع فقط بعد الإطلاق وتختار صيغة التعاون المناسبة لك.',
-      ctaFormats: 'اختر صيغة التعاون',
-      ctaMore: 'اعرف المزيد',
+      titleAccent: 'من $0',
+      desc: 'ننشئ مواقع عصرية متكاملة دون دفعة مقدمة للتطوير. اختر الصيغة المناسبة: تطوير مقابل $0 مع صيانة شهرية، أو دفع كامل بعد الإنجاز مع سنة دعم هدية.',
+      ctaDiscuss: 'ناقش مشروعك',
+      ctaCompare: 'قارن الصيغ',
       perks: {
         noDeposit: 'بدون دفعة مقدمة',
-        launch: 'إطلاق خلال 2–4 أسابيع',
-        design: 'تصميم مخصص',
-        support: 'دعم بعد الإطلاق',
-      },
+        ownership: 'ملكية كاملة عند الشراء',
+        gift: '12 شهر صيانة هدية',
+        support: 'دعم تقني'
+      }
     },
     trust: {
       badge: 'ثقة',
-      title: 'أرقام يمكن الوثوق بها',
-      desc: 'عمل شفاف، جداول زمنية واضحة، ودعم في كل مرحلة.',
-      stats: {
-        sites: { value: '+50', label: 'موقع تم إطلاقه', desc: 'مشاريع حقيقية للأعمال', mobileLine: '+50' },
-        weeks: { value: 'حتى 4', suffix: 'أسابيع', label: 'للإطلاق', desc: 'جدول زمني واضح دون تأخير', mobileLine: '4 أسابيع' },
-        clients: { value: '98%', label: 'عملاء راضون', desc: 'نركز على النتائج', mobileLine: '98%' },
-        support: { label: 'دعم بعد الإطلاق', desc: 'لن نتركك وحدك مع المشاكل التقنية', mobileLine: '24/7' },
-      },
+      title: 'لماذا يسهل العمل معنا',
+      desc: 'شروط شفافة ونهج فردي ودعم تقني بعد الإطلاق.',
+      items: [
+        {
+          title: 'بدون دفعة مقدمة',
+          desc: 'يبدأ التطوير دون رسوم بناء مدفوعة مسبقًا'
+        },
+        {
+          title: 'شروط واضحة',
+          desc: 'صيغ التعاون والتسعير التقريبي واضحان من البداية'
+        },
+        {
+          title: 'نهج فردي',
+          desc: 'حلول تناسب عملك ووظائفه وميزانيتك'
+        },
+        {
+          title: 'دعم تقني',
+          desc: 'متابعة بعد الإطلاق وفق صيغة التعاون المختارة'
+        }
+      ]
     },
     benefits: {
       badge: 'المزايا',
       title: 'لماذا يختارنا العملاء',
-      desc: 'جودة استوديو راقٍ مع شروط مرنة لعملك.',
+      desc: 'جودة استوديو مع شروط تعاون مرنة.',
       items: [
-        { title: 'إطلاق سريع', description: 'موقع جاهز خلال 2–4 أسابيع بجدول زمني واضح' },
-        { title: 'تصميم مخصص', description: 'هوية بصرية فريدة لعلامتك، دون قوالب جاهزة' },
-        { title: 'متجاوب', description: 'مظهر مثالي على الهاتف وسطح المكتب' },
-        { title: 'تحسين SEO', description: 'جاهز لمحركات البحث من اليوم الأول' },
-        { title: 'بدون مخاطر', description: 'ادفع فقط بعد إطلاق الموقع' },
-        { title: 'دعم', description: 'متابعة تقنية بعد النشر' },
-      ],
+        {
+          title: 'بدون دفعة مقدمة للتطوير',
+          description: 'الدفع بعد نتيجة معتمدة أو ضمن نموذج الخدمة'
+        },
+        {
+          title: 'تصميم مخصص',
+          description: 'هوية بصرية فريدة لعلامتك — دون قوالب'
+        },
+        {
+          title: 'متجاوب',
+          description: 'تجربة موثوقة على الجوال وسطح المكتب'
+        },
+        {
+          title: 'إعداد SEO أساسي',
+          description: 'أساس تقني لمحركات البحث'
+        },
+        {
+          title: 'صيغتان للتعاون',
+          description: 'شراء مع سنة هدية أو الموقع كخدمة'
+        },
+        {
+          title: 'صيانة تقنية',
+          description: 'تحديثات ودعم واستقرار الموقع'
+        }
+      ]
+    },
+    formatsTeaser: {
+      badge: 'التعاون',
+      title: 'اختر الصيغة المناسبة',
+      desc: 'نموذجان واضحان — وفق أهدافك وميزانيتك.',
+      more: 'المزيد عن الصيغ',
+      buyout: {
+        title: 'شراء الموقع الجاهز',
+        desc: 'الدفع بعد الإنجاز · ملكية كاملة · 12 شهر صيانة هدية'
+      },
+      saas: {
+        title: 'الموقع كخدمة',
+        desc: 'تطوير $0 · صيانة $299–499/شهر · عقد لمدة 12 شهرًا'
+      }
     },
     latestWorks: {
       badge: 'معرض الأعمال',
@@ -491,106 +953,268 @@ export const translations = {
         { text: 'نهج احترافي، مواعيد واضحة، ودعم بعد الإطلاق.', author: 'Dmytro S.', role: 'شركة بناء' },
       ],
     },
-    guarantees: {
-      badge: 'الضمانات',
-      title: 'ضماناتنا',
-      desc: 'تحصل على أكثر من موقع — حل رقمي موثوق مع دعم كامل.',
-      items: [
-        { title: 'بدون رسوم مخفية', desc: 'تسعير شفاف بعد الاستشارة' },
-        { title: 'تصميم فريد', desc: 'لا قوالب — هوية بصرية مخصصة' },
-        { title: 'تكيف كامل مع الجوال', desc: 'مثالي على جميع الشاشات' },
-        { title: 'جاهز لـ SEO', desc: 'تحسين أساسي مشمول' },
-        { title: 'دعم تقني', desc: 'متابعة بعد الإطلاق' },
-        { title: 'استضافة آمنة', desc: 'SSL، نسخ احتياطي، استقرار' },
-      ],
-    },
     contact: {
       title: 'هل أنت مستعد لمناقشة مشروعك؟',
-      desc: 'يسعدنا الإجابة على أسئلتك ومساعدتك في اختيار أفضل حل لعملك.',
-      telegram: 'راسلنا على Telegram',
-      consult: 'احجز استشارة',
-      emailSubject: 'استشارة — El Mejor Studio',
+      desc: 'اترك طلبًا عبر الموقع — سنرد عبر البريد. تيليغرام يبقى قناة إضافية.',
+      openForm: 'أرسل طلبًا',
+      telegram: 'Telegram',
+      consult: 'أرسل طلبًا',
+      emailSubject: 'مناقشة مشروع — El Mejor Studio',
+      form: {
+        badge: 'طلب',
+        title: 'ناقش مشروعك',
+        desc: 'املأ النموذج — سنرد على بريدك الإلكتروني.',
+        close: 'إغلاق',
+        name: 'الاسم',
+        email: 'البريد الإلكتروني',
+        siteType: 'نوع الموقع',
+        siteTypePlaceholder: 'اختر النوع',
+        siteTypes: {
+          visitka: 'موقع تعريفي',
+          corporate: 'موقع مؤسسي',
+          shop: 'متجر إلكتروني',
+          other: 'مشروع آخر'
+        },
+        format: 'صيغة التعاون',
+        formats: {
+          buyout: 'شراء موقع جاهز',
+          saas: 'الموقع كخدمة',
+          consult: 'أحتاج استشارة'
+        },
+        message: 'الرسالة',
+        messagePlaceholder: 'صف المشروع والأهداف والرغبات باختصار',
+        messageHint: 'بضع جمل كافية',
+        privacy:
+          'نستخدم بيانات التواصل فقط للرد على هذا الطلب. ستُضاف سياسة خصوصية منفصلة قبل الإطلاق العام للنموذج.',
+        submit: 'إرسال الطلب',
+        sending: 'جارٍ الإرسال…',
+        successTitle: 'تم إرسال الطلب',
+        successDesc: 'شكرًا لك! سنرد على البريد الذي أدخلته قريبًا.',
+        sendAnother: 'إرسال طلب آخر',
+        sendError: 'تعذر إرسال الطلب. تحقق من الاتصال وحاول مرة أخرى.',
+        configError:
+          'النموذج غير متصل ببريد الاستوديو بعد. أضف مفاتيح EmailJS إلى البيئة، أو راسلنا عبر تيليغرام.',
+        retry: 'حاول مجددًا',
+        errors: {
+          nameRequired: 'أدخل الاسم',
+          nameLong: 'الاسم طويل جدًا',
+          emailRequired: 'أدخل البريد الإلكتروني',
+          emailInvalid: 'أدخل بريدًا إلكترونيًا صالحًا',
+          siteTypeRequired: 'اختر نوع الموقع',
+          formatRequired: 'اختر صيغة التعاون',
+          messageRequired: 'أضف رسالة قصيرة',
+          messageLong: 'الرسالة طويلة جدًا'
+        }
+      }
     },
     footer: {
-      desc: 'مواقع أعمال احترافية دون دفعة مقدمة للتطوير. عمل شفاف يركز على النتائج مع دعم كامل.',
+      desc: 'مواقع أعمال احترافية دون دفعة مقدمة للتطوير. صيغتان للتعاون وشروط واضحة ودعم تقني.',
       website: 'موقعنا',
-      rights: 'جميع الحقوق محفوظة.',
-      privacy: 'سياسة الخصوصية',
-      terms: 'شروط التعاون',
+      rights: 'جميع الحقوق محفوظة.'
     },
     cooperation: {
-      heroTitle: 'كيف',
-      heroAccent: 'يعمل',
-      heroDesc: 'ننشئ الموقع على نفقتنا — وتختار صيغة التعاون بعد الإطلاق.',
+      heroTitle: 'اختر',
+      heroAccent: 'الصيغة',
+      heroDesc: 'صيغتان واضحتان للتعاون: شراء موقع جاهز أو تشغيله كخدمة.',
       intro1: 'ننشئ موقعك',
-      intro1accent: 'بالكامل على نفقتنا',
-      intro2: 'بعد الإطلاق، تختار إحدى صيغ التعاون.',
+      intro1accent: 'دون دفعة مقدمة للتطوير',
+      intro2: 'ثم تختار الشراء مع سنة صيانة هدية، أو نموذج الخدمة بالدفع الشهري.',
       formats: {
         badge: 'التعاون',
         title: 'صيغ التعاون',
-        desc: 'اختر النموذج الذي يناسب أهدافك بعد إطلاق الموقع.',
+        desc: 'الشروط الأساسية باختصار. التفاصيل تُثبت في عقد فردي.',
+        cta: 'ناقش مشروعك',
         buyout: {
-          variant: 'الخيار 1',
-          title: 'تشتري الموقع',
-          points: ['دفعة واحدة', 'ملكية كاملة', 'جميع الملفات المصدرية', 'تحكم كامل بالموقع', 'إمكانية النقل إلى أي استضافة'],
+          variant: 'الصيغة 1',
+          title: 'موقعك — ملكيتك',
+          summary: 'ادفع مقابل التطوير بعد الإنجاز واحصل على 12 شهرًا من الصيانة هدية.',
+          gift: '12 شهرًا من الصيانة هدية',
+          points: [
+            'الدفع بعد الإنجاز',
+            'ملكية كاملة بعد الدفع',
+            'جميع الملفات المصدرية',
+            'إمكانية النقل إلى استضافة أخرى',
+            '12 شهرًا من الصيانة المتفق عليها مجانًا',
+            'بعد السنة الأولى الدعم اختياري'
+          ]
         },
         saas: {
-          variant: 'الخيار 2',
-          title: 'الموقع كخدمة',
-          points: ['دفع شهري', 'الاستضافة مشمولة', 'دعم تقني', 'نسخ احتياطي', 'تحديثات النظام', 'متابعة مستمرة'],
-        },
+          variant: 'الصيغة 2',
+          title: 'موقع احترافي مقابل $0',
+          summary: 'نطور الموقع دون رسوم تطوير أولية. تدفع فقط مقابل الصيانة الشهرية.',
+          note: 'يبقى الموقع ملكًا للاستوديو. تُناقش شروط الشراء المحتمل بشكل فردي.',
+          points: [
+            'تطوير مقابل $0',
+            'صيانة $299–499/شهر',
+            'عقد لمدة 12 شهرًا',
+            'دعم تقني',
+            'تحديثات ونسخ احتياطي'
+          ]
+        }
       },
       pricing: {
         badge: 'التسعير',
         title: 'التسعير التقريبي',
-        desc: 'يُحدد السعر النهائي بعد الاستشارة وتحليل المشروع.',
+        desc: 'يعتمد السعر النهائي على الوظائف والتعقيد ومتطلبات المشروع.',
         popular: 'الأكثر شيوعًا',
         from: 'من',
         perMonth: '/شهر',
         plans: {
           visitka: 'موقع تعريفي',
           corporate: 'موقع مؤسسي',
-          shop: 'متجر إلكتروني',
-          saas: 'الموقع كخدمة',
+          shop: 'متجر إلكتروني'
         },
         plansShort: {
           visitka: 'تعريفي',
           corporate: 'مؤسسي',
-          shop: 'متجر',
-          saas: 'خدمة',
-        },
-        prices: { visitka: '150€', corporate: '799€', shop: '1099€', saas: '49€' },
+          shop: 'متجر'
+        }
+      },
+      maintenance: {
+        badge: 'الصيانة',
+        title: 'نعتني بموقعك بعد الإطلاق',
+        desc: 'دعم تقني وتحديثات ومتابعة ليبقى موقعك مستقرًا وآمنًا وجاهزًا للعمل.',
+        priceLabel: 'التكلفة',
+        priceNote: 'يعتمد المبلغ النهائي على حجم الموقع ووظائفه.',
+        giftNote: 'عند الشراء الكامل — أول 12 شهرًا من الصيانة المتفق عليها هدية.',
+        items: [
+          {
+            title: 'دعم تقني',
+            desc: 'مساعدة في المسائل التقنية بعد الإطلاق'
+          },
+          {
+            title: 'تحديثات النظام',
+            desc: 'تحديثات ملائمة ضمن النطاق المتفق عليه'
+          },
+          {
+            title: 'نسخ احتياطي',
+            desc: 'نسخ منتظمة لحماية بياناتك'
+          },
+          {
+            title: 'مراقبة العمل',
+            desc: 'التحقق من التوفر والمؤشرات الأساسية'
+          },
+          {
+            title: 'مراقبة الأمان',
+            desc: 'فحوصات أساسية وتقليل المخاطر التقنية'
+          },
+          {
+            title: 'إصلاح الأخطاء',
+            desc: 'معالجة الأعطال التقنية ضمن العقد'
+          },
+          {
+            title: 'تحسين الأداء',
+            desc: 'تحسين السرعة عند الحاجة'
+          },
+          {
+            title: 'تحديثات محتوى متفق عليها',
+            desc: 'تغييرات المحتوى ضمن الحجم المتفق عليه'
+          }
+        ]
       },
       included: {
-        badge: 'الباقة',
-        title: 'ما يشمله كل موقع',
-        desc: 'باقة أساسية كاملة في كل مشروع — دون رسوم تطوير مخفية.',
-        items: ['تصميم مخصص', 'تكيف مع الجوال', 'تحسين SEO', 'حماية SSL', 'نماذج طلب', 'ربط النطاق', 'تحليلات أساسية'],
-        itemsShort: ['تصميم', 'جوال', 'SEO', 'SSL', 'نماذج', 'نطاق', 'تحليلات'],
+        badge: 'التطوير',
+        title: 'ما يشمله تطوير الموقع',
+        desc: 'نطاق أساسي وإمكانات إضافية حسب نوع المشروع.',
+        baseTitle: 'الإمكانات الأساسية',
+        extraTitle: 'إمكانات إضافية',
+        base: [
+          'تصميم متجاوب',
+          'تحسين للجوال',
+          'إعداد SEO أساسي',
+          'اختبار',
+          'نشر الموقع',
+          'إعدادات أمان أساسية'
+        ],
+        extra: [
+          'حساب شخصي',
+          'متجر إلكتروني',
+          'تكاملات دفع',
+          'لوحة إدارة',
+          'CRM',
+          'واجهات API معقدة',
+          'تعدد اللغات',
+          'تكاملات مخصصة'
+        ],
+        extraNote: 'الإمكانات الإضافية تُتفق بشكل منفصل وتؤثر على السعر النهائي.'
       },
       workflow: {
         badge: 'العملية',
         title: 'كيف نعمل',
-        steps: ['استشارة', 'تحليل الأعمال', 'تصميم', 'تطوير', 'اختبار', 'إطلاق'],
-        stepsShort: ['استشارة', 'تحليل', 'تصميم', 'تطوير', 'اختبار', 'إطلاق'],
+        steps: [
+          'استشارة',
+          'تحليل الأعمال',
+          'تصميم',
+          'تطوير',
+          'اختبار',
+          'إطلاق'
+        ],
+        stepsShort: [
+          'استشارة',
+          'تحليل',
+          'تصميم',
+          'تطوير',
+          'اختبار',
+          'إطلاق'
+        ]
       },
       faq: {
         badge: 'FAQ',
         title: 'الأسئلة الشائعة',
         items: [
-          { question: 'هل التطوير مجاني حقًا؟', answer: 'نعم. لا نطلب دفعة مقدمة للتصميم والتطوير — نستثمر في بناء موقعك. تبدأ الدفع فقط بعد الإطلاق وفق صيغة التعاون التي تختارها.' },
-          { question: 'متى أدفع؟', answer: 'بعد الاتفاق على المشروع وإكمال التطوير ونشر الموقع. ثم إما اشتراك شهري (الموقع كخدمة) أو شراء لمرة واحدة.' },
-          { question: 'هل يمكنني شراء الموقع؟', answer: 'نعم. يمكنك الانتقال إلى الشراء في أي وقت: دفعة واحدة، ونقل كامل للحقوق والملفات والوصول.' },
-          { question: 'هل يمكن الانتقال من الاشتراك إلى الشراء؟', answer: 'بالطبع. يبدأ كثير من العملاء باشتراك ثم يشترون الموقع عند رؤية النتائج. نناقش شروط الشراء بشكل فردي.' },
-        ],
-      },
+          {
+            question: 'كيف يعمل تطوير الموقع مقابل $0؟',
+            answer: 'في صيغة «الموقع كخدمة» نبني الموقع دون رسوم تطوير أولية. تدفع صيانة شهرية بموجب عقد لمدة 12 شهرًا.'
+          },
+          {
+            question: 'لماذا قد يكون التطوير مجانيًا؟',
+            answer: 'نستثمر في بناء الموقع ونحصل على الأجر عبر الصيانة الشهرية أو عبر شراء النتيجة الجاهزة — دون دفعة مقدمة للتطوير.'
+          },
+          {
+            question: 'كم تكلفة الصيانة؟',
+            answer: 'عادةً $299–499 شهريًا. يعتمد المبلغ النهائي على حجم الموقع ووظائفه ونطاق الدعم.'
+          },
+          {
+            question: 'ما مدة العقد؟',
+            answer: 'لصيغة «الموقع كخدمة» يُبرم العقد لمدة 12 شهرًا. وتُناقش التفاصيل الأخرى بشكل فردي.'
+          },
+          {
+            question: 'هل تنتقل ملكية الموقع للعميل في صيغة «الموقع كخدمة»؟',
+            answer: 'لا. في هذه الصيغة يبقى الموقع ملكًا للاستوديو. ولا تنتقل الملكية تلقائيًا بعد 12 شهرًا.'
+          },
+          {
+            question: 'هل يمكنني شراء الموقع؟',
+            answer: 'نعم. يمكنك اختيار الشراء من البداية، أو مناقشة الشراء بشكل فردي إذا بدأت بنموذج الخدمة.'
+          },
+          {
+            question: 'متى أدفع مقابل التطوير عند الشراء الكامل؟',
+            answer: 'بعد إكمال التطوير وقبول النتيجة المتفق عليها — دون دفعة مقدمة للتطوير.'
+          },
+          {
+            question: 'ما الذي تشمله 12 شهرًا من الصيانة الهدية؟',
+            answer: 'متابعة تقنية متفق عليها بعد الشراء: دعم وتحديثات وعمل مستقر ضمن العقد. وتُثبت التفاصيل بشكل فردي.'
+          },
+          {
+            question: 'ماذا يحدث بعد انتهاء سنة الهدية؟',
+            answer: 'تقرر بنفسك ما إذا كنت ستستمر في الصيانة المدفوعة. لا يوجد اشتراك إلزامي.'
+          },
+          {
+            question: 'هل يمكنني نقل الموقع المشتراة إلى استضافة أخرى؟',
+            answer: 'نعم. بعد دفع الشراء الكامل تحصل على الحقوق ويمكنك نقل الموقع.'
+          },
+          {
+            question: 'كم يستغرق التطوير؟',
+            answer: 'تعتمد المدة على الحجم والتعقيد. نتفق على جدول زمني تقريبي بعد تحليل المشروع.'
+          }
+        ]
+      }
     },
     meta: {
-      title: 'El Mejor Studio — مواقع أعمال متميزة من 0€',
-      description: 'El Mejor Studio — مواقع أعمال متميزة من 0€. بدون دفعة مقدمة للتطوير. مواقع متكاملة.',
+      title: 'El Mejor Studio — مواقع أعمال متميزة من $0',
+      description: 'El Mejor Studio — مواقع متكاملة دون دفعة مقدمة. شراء مع 12 شهر صيانة هدية أو الموقع كخدمة من $0 مع متابعة شهرية.'
     },
-  },
-}
+  }
+  }
 
 export const SUPPORTED_LOCALES = ['uk', 'en', 'ar']
 

@@ -1,10 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
 import { SITE } from '../../config/site'
+import { useTranslation } from '../../i18n/LanguageProvider'
 import { scrollToHero } from '../../utils/navigation'
 import AureaMark from './AureaMark'
 
 export default function Logo({ className = '', asLink = true, onHomeClick }) {
   const location = useLocation()
+  const { t } = useTranslation()
 
   const content = (
     <span className={`inline-flex items-center gap-3 ${className}`}>
@@ -43,7 +45,7 @@ export default function Logo({ className = '', asLink = true, onHomeClick }) {
         to="/"
         onClick={handleClick}
         className="group transition-opacity hover:opacity-90"
-        aria-label={`${SITE.name} — на головну`}
+        aria-label={`${SITE.name} — ${t('nav.logoHome')}`}
       >
         {content}
       </Link>

@@ -1,15 +1,15 @@
 import {
-  Zap,
+  Wallet,
   Pencil,
   Smartphone,
   Search,
-  ShieldCheck,
+  KeyRound,
   Headphones,
 } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import { useTranslation } from '../../i18n/LanguageProvider'
 
-const icons = [Zap, Pencil, Smartphone, Search, ShieldCheck, Headphones]
+const icons = [Wallet, Pencil, Smartphone, Search, KeyRound, Headphones]
 
 export default function Benefits() {
   const { t } = useTranslation()

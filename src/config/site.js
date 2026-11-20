@@ -5,6 +5,6 @@ export const SITE = {
   telegram: 'https://t.me/PBMBarcelona',
   instagram: 'https://www.instagram.com/elmejortech/',
   website: 'https://mejortech.vercel.app/#menu',
-  email: 'contact939aureastudio@gmail.com',
+  email: 'elmejorstudio63@gmail.com',
   // phone: '+380 (67) 000 00 00',
 }

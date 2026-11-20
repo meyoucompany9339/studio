@@ -1,7 +1,6 @@
 import SectionHeading from '../ui/SectionHeading'
 import { useTranslation } from '../../i18n/LanguageProvider'
-
-const planKeys = ['visitka', 'corporate', 'shop', 'saas']
+import { PRICING, SITE_PLAN_KEYS, formatFromPrice } from '../../config/pricing'
 
 function PricingCard({ name, price, popular, popularLabel, compact = false }) {
   return (
@@ -45,19 +44,16 @@ function PricingCard({ name, price, popular, popularLabel, compact = false }) {
 
 export default function Pricing() {
   const { t } = useTranslation()
+  const from = t('cooperation.pricing.from')
+  const popularLabel = t('cooperation.pricing.popular')
 
-  const plans = planKeys.map((key) => ({
+  const plans = SITE_PLAN_KEYS.map((key) => ({
     key,
     name: t(`cooperation.pricing.plans.${key}`),
     nameShort: t(`cooperation.pricing.plansShort.${key}`),
-    price:
-      key === 'saas'
-        ? `${t('cooperation.pricing.from')} ${t(`cooperation.pricing.prices.${key}`)}${t('cooperation.pricing.perMonth')}`
-        : `${t('cooperation.pricing.from')} ${t(`cooperation.pricing.prices.${key}`)}`,
+    price: `${from} ${formatFromPrice(PRICING[key])}`,
     popular: key === 'corporate',
   }))
-
-  const popularLabel = t('cooperation.pricing.popular')
 
   return (
     <section className="section-py bg-surface-elevated">
@@ -68,7 +64,6 @@ export default function Pricing() {
           description={t('cooperation.pricing.desc')}
         />
 
-        {/* Мобільна — горизонтальний скрол */}
         <div className="pricing-scroll -mx-4 flex gap-3 overflow-x-auto px-4 pb-1 pt-3.5 snap-x snap-mandatory md:hidden">
           {plans.map(({ key, nameShort, price, popular }) => (
             <PricingCard
@@ -82,8 +77,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Десктоп — сітка */}
-        <div className="hidden gap-4 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+        <div className="hidden gap-4 md:grid md:grid-cols-3 lg:gap-5">
           {plans.map(({ key, name, price, popular }) => (
             <PricingCard
               key={key}
@@ -94,10 +88,6 @@ export default function Pricing() {
             />
           ))}
         </div>
-
-        <p className="mx-auto mt-5 max-w-2xl text-center text-sm text-muted sm:text-base">
-          {t('cooperation.pricing.desc')}
-        </p>
       </div>
     </section>
   )

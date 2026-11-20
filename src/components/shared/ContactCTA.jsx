@@ -1,9 +1,12 @@
-import { MessageCircle, Send, Calendar } from 'lucide-react'
+import { MessageCircle, Send } from 'lucide-react'
 import { SITE } from '../../config/site'
 import { useTranslation } from '../../i18n/LanguageProvider'
+import { useContactModal } from '../contact/ContactModalProvider'
+import Button from '../ui/Button'
 
 export default function ContactCTA() {
   const { t } = useTranslation()
+  const { openContact } = useContactModal()
 
   return (
     <section id="kontakt" className="section-py scroll-mt-24">
@@ -20,21 +23,20 @@ export default function ContactCTA() {
               {t('contact.desc')}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4 max-md:mt-7 max-md:gap-2.5">
+              <Button
+                onClick={() => openContact()}
+                className="w-full sm:w-auto max-md:!py-3"
+              >
+                <Send className="h-4 w-4" />
+                {t('contact.openForm')}
+              </Button>
               <a
                 href={SITE.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-[#FF8C00] to-[#FFB347] px-8 py-4 text-sm font-semibold text-black shadow-lg shadow-[#FF8C00]/25 transition hover:brightness-110 sm:w-auto max-md:gap-2 max-md:px-6 max-md:py-3"
-              >
-                <Send className="h-4 w-4" />
-                {t('contact.telegram')}
-              </a>
-              <a
-                href={`mailto:${SITE.email}?subject=${encodeURIComponent(t('contact.emailSubject'))}`}
                 className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.04] px-8 py-4 text-sm font-semibold text-white transition hover:border-[#FF8C00]/30 hover:bg-[#FF8C00]/5 sm:w-auto max-md:gap-2 max-md:px-6 max-md:py-3"
               >
-                <Calendar className="h-4 w-4 text-[#FFB347]" />
-                {t('contact.consult')}
+                {t('contact.telegram')}
               </a>
             </div>
           </div>

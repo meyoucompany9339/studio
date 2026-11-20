@@ -1,22 +1,29 @@
 import {
-  BarChart3,
-  Globe,
   Layout,
-  Lock,
-  Mail,
   MonitorSmartphone,
   Search,
+  FlaskConical,
+  Rocket,
+  ShieldCheck,
+  UserRound,
+  ShoppingCart,
+  CreditCard,
+  PanelTop,
+  Network,
+  Code2,
+  Languages,
+  Puzzle,
 } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import { useTranslation } from '../../i18n/LanguageProvider'
 
-const icons = [Layout, MonitorSmartphone, Search, Lock, Mail, Globe, BarChart3]
-const mobileEmojis = ['🎨', '📱', '🔍', '🔒', '📧', '🌐', '📊']
+const baseIcons = [Layout, MonitorSmartphone, Search, FlaskConical, Rocket, ShieldCheck]
+const extraIcons = [UserRound, ShoppingCart, CreditCard, PanelTop, Network, Code2, Languages, Puzzle]
 
 export default function WhatsIncluded() {
   const { t } = useTranslation()
-  const items = t('cooperation.included.items')
-  const itemsShort = t('cooperation.included.itemsShort')
+  const base = t('cooperation.included.base')
+  const extra = t('cooperation.included.extra')
 
   return (
     <section className="section-py relative bg-surface-elevated">
@@ -27,37 +34,53 @@ export default function WhatsIncluded() {
           description={t('cooperation.included.desc')}
         />
 
-        {/* Мобільна — сітка 2 колонки з емодзі */}
-        <div className="grid grid-cols-2 gap-2.5 md:hidden">
-          {itemsShort.map((label, i) => (
-            <div
-              key={label}
-              className="glass flex min-h-[48px] items-center gap-2 rounded-xl border border-white/[0.06] px-3 py-2.5 transition hover:border-[#FF8C00]/25"
-            >
-              <span className="text-base leading-none" aria-hidden>
-                {mobileEmojis[i]}
-              </span>
-              <span className="text-sm font-medium leading-snug text-white">{label}</span>
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[#FFB347]">
+              {t('cooperation.included.baseTitle')}
+            </h3>
+            <div className="grid gap-2.5 sm:grid-cols-2">
+              {base.map((label, i) => {
+                const Icon = baseIcons[i] ?? Layout
+                return (
+                  <div
+                    key={label}
+                    className="glass flex items-center gap-3 rounded-xl border border-white/[0.06] px-3 py-3"
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#FF8C00]/12">
+                      <Icon className="h-4 w-4 text-[#FF8C00]" />
+                    </span>
+                    <span className="text-sm font-medium text-white">{label}</span>
+                  </div>
+                )
+              })}
             </div>
-          ))}
-        </div>
+          </div>
 
-        {/* Десктоп — картки з іконками */}
-        <div className="hidden gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {items.map((text, i) => {
-            const Icon = icons[i]
-            return (
-              <div
-                key={text}
-                className="glass flex items-center gap-4 rounded-2xl px-5 py-4 transition hover:border-[#FF8C00]/25"
-              >
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FF8C00]/10">
-                  <Icon className="h-5 w-5 text-accent-light" />
-                </span>
-                <span className="font-medium text-white">{text}</span>
-              </div>
-            )
-          })}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/50">
+              {t('cooperation.included.extraTitle')}
+            </h3>
+            <div className="grid gap-2.5 sm:grid-cols-2">
+              {extra.map((label, i) => {
+                const Icon = extraIcons[i] ?? Puzzle
+                return (
+                  <div
+                    key={label}
+                    className="flex items-center gap-3 rounded-xl border border-white/[0.05] bg-white/[0.02] px-3 py-3"
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/[0.04]">
+                      <Icon className="h-4 w-4 text-white/50" />
+                    </span>
+                    <span className="text-sm font-medium text-white/75">{label}</span>
+                  </div>
+                )
+              })}
+            </div>
+            <p className="mt-4 text-xs leading-relaxed text-muted sm:text-sm">
+              {t('cooperation.included.extraNote')}
+            </p>
+          </div>
         </div>
       </div>
     </section>

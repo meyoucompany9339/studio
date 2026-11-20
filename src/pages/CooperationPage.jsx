@@ -2,6 +2,7 @@ import ModelHero from '../components/cooperation/ModelHero'
 import ModelIntro from '../components/cooperation/ModelIntro'
 import FormatCards from '../components/cooperation/FormatCards'
 import Pricing from '../components/cooperation/Pricing'
+import MaintenanceSection from '../components/cooperation/MaintenanceSection'
 import WhatsIncluded from '../components/cooperation/WhatsIncluded'
 import Workflow from '../components/cooperation/Workflow'
 import FAQSection from '../components/cooperation/FAQSection'
@@ -14,6 +15,7 @@ export default function CooperationPage() {
       <ModelIntro />
       <FormatCards />
       <Pricing />
+      <MaintenanceSection />
       <WhatsIncluded />
       <Workflow />
       <FAQSection />

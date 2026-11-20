@@ -5,6 +5,7 @@ import Logo from '../brand/Logo'
 import Button from '../ui/Button'
 import LanguageToggle from '../ui/LanguageToggle'
 import { useTranslation } from '../../i18n/LanguageProvider'
+import { useContactModal } from '../contact/ContactModalProvider'
 import { scrollToHero } from '../../utils/navigation'
 
 export default function Header() {
@@ -12,6 +13,7 @@ export default function Header() {
   const location = useLocation()
   const navigate = useNavigate()
   const { t } = useTranslation()
+  const { openContact } = useContactModal()
 
   const navLinks = [
     { to: '/', label: t('nav.home'), isHome: true },
@@ -71,7 +73,7 @@ export default function Header() {
 
         <div className="relative z-10 hidden items-center gap-3 md:flex">
           <Button
-            href="#kontakt"
+            onClick={() => openContact()}
             variant="primary"
             className="!rounded-full !px-7 !py-3.5 !text-sm !font-bold !shadow-[0_0_22px_rgba(255,140,0,0.45),0_4px_20px_rgba(255,140,0,0.3)] hover:!shadow-[0_0_32px_rgba(255,140,0,0.55),0_6px_28px_rgba(255,140,0,0.4)] hover:!brightness-110"
           >
@@ -85,7 +87,7 @@ export default function Header() {
             type="button"
             className="rounded-lg p-1.5 text-muted hover:bg-white/5"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Menu"
+            aria-label={t('nav.menu')}
           >
             {mobileOpen ? <X className="h-[18px] w-[18px]" /> : <Menu className="h-[18px] w-[18px]" />}
           </button>
@@ -124,10 +126,12 @@ export default function Header() {
               ),
             )}
             <Button
-              href="#kontakt"
               variant="primary"
               className="mt-2 w-full !py-3 !text-sm !font-bold !shadow-[0_0_22px_rgba(255,140,0,0.45),0_4px_20px_rgba(255,140,0,0.3)]"
-              onClick={() => setMobileOpen(false)}
+              onClick={() => {
+                setMobileOpen(false)
+                openContact()
+              }}
             >
               {t('nav.contact')}
             </Button>
