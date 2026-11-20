@@ -1,6 +1,7 @@
 import { useId, useState } from 'react'
 import { AlertCircle, CheckCircle2, Loader2, Send } from 'lucide-react'
 import { useTranslation } from '../../i18n/LanguageProvider'
+import { trackFormSubmitSuccess } from '../../analytics/ga'
 import { isEmailJsConfigured } from '../../config/emailjs'
 import { EmailJsConfigError, sendContactEmail } from '../../services/sendContactEmail'
 
@@ -138,6 +139,12 @@ export default function ContactForm({
         message: values.message.trim(),
         locale,
         submittedAt,
+      })
+
+      // Analytics: categorical fields only — never name, email, or message text.
+      trackFormSubmitSuccess({
+        siteType: values.siteType,
+        format: values.format,
       })
 
       setStatus('success')

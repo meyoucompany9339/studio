@@ -85,7 +85,7 @@ export default function FormatCards() {
 
               <div className="mt-7">
                 <Button
-                  onClick={() => openContact({ format: key })}
+                  onClick={() => openContact({ format: key, placement: `format_${key}` })}
                   className="w-full sm:w-auto"
                 >
                   {t('cooperation.formats.cta')}

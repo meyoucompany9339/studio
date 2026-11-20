@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Send, Mail, Instagram, Globe, /* Phone, */ ChevronRight } from 'lucide-react'
 import Logo from '../brand/Logo'
+import { trackTelegramClick } from '../../analytics/ga'
 import { SITE } from '../../config/site'
 import { useTranslation } from '../../i18n/LanguageProvider'
 
@@ -55,6 +56,7 @@ export default function Footer() {
                   href={SITE.telegram}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackTelegramClick('footer_mobile')}
                   className={`inline-flex items-center gap-1.5 text-[11px] leading-tight ${linkMobile}`}
                 >
                   <Send className="h-3.5 w-3.5 shrink-0 text-[#FF8C00]" />
@@ -142,6 +144,7 @@ export default function Footer() {
                   href={SITE.telegram}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackTelegramClick('footer_desktop')}
                   className={`group inline-flex items-center gap-2 text-sm text-muted ${linkDesktop}`}
                 >
                   <Send className="h-4 w-4 text-[#FF8C00]" />

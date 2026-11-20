@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useMemo, useState } from 'react'
+import { trackConsultationClick } from '../../analytics/ga'
 import ContactModal from './ContactModal'
 
 const ContactModalContext = createContext(null)
@@ -8,6 +9,7 @@ export function ContactModalProvider({ children }) {
   const [defaults, setDefaults] = useState({})
 
   const openContact = useCallback((options = {}) => {
+    trackConsultationClick(options.placement || options.format || 'general')
     setDefaults({
       format: options.format || 'consult',
       siteType: options.siteType || '',

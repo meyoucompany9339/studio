@@ -1,4 +1,5 @@
 import { MessageCircle, Send } from 'lucide-react'
+import { trackTelegramClick } from '../../analytics/ga'
 import { SITE } from '../../config/site'
 import { useTranslation } from '../../i18n/LanguageProvider'
 import { useContactModal } from '../contact/ContactModalProvider'
@@ -24,7 +25,7 @@ export default function ContactCTA() {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4 max-md:mt-7 max-md:gap-2.5">
               <Button
-                onClick={() => openContact()}
+                onClick={() => openContact({ placement: 'contact_cta' })}
                 className="w-full sm:w-auto max-md:!py-3"
               >
                 <Send className="h-4 w-4" />
@@ -34,6 +35,7 @@ export default function ContactCTA() {
                 href={SITE.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackTelegramClick('contact_cta')}
                 className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.04] px-8 py-4 text-sm font-semibold text-white transition hover:border-[#FF8C00]/30 hover:bg-[#FF8C00]/5 sm:w-auto max-md:gap-2 max-md:px-6 max-md:py-3"
               >
                 {t('contact.telegram')}

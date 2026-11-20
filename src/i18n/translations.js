@@ -202,6 +202,12 @@ export const translations = {
       website: 'Наш сайт',
       rights: 'Усі права захищені.'
     },
+    cookies: {
+      title: 'Файли cookie для аналітики',
+      desc: 'Ми використовуємо Google Analytics лише після вашої згоди, щоб розуміти відвідуваність сайту. Персональні дані форм не передаються в аналітику.',
+      accept: 'Прийняти',
+      decline: 'Відхилити'
+    },
     cooperation: {
       heroTitle: 'Оберіть',
       heroAccent: 'формат',
@@ -607,6 +613,12 @@ export const translations = {
       website: 'Our website',
       rights: 'All rights reserved.'
     },
+    cookies: {
+      title: 'Analytics cookies',
+      desc: 'We use Google Analytics only after your consent to understand site traffic. Form personal data is never sent to analytics.',
+      accept: 'Accept',
+      decline: 'Decline'
+    },
     cooperation: {
       heroTitle: 'Choose your',
       heroAccent: 'format',
@@ -1011,6 +1023,12 @@ export const translations = {
       desc: 'مواقع أعمال احترافية دون دفعة مقدمة للتطوير. صيغتان للتعاون وشروط واضحة ودعم تقني.',
       website: 'موقعنا',
       rights: 'جميع الحقوق محفوظة.'
+    },
+    cookies: {
+      title: 'ملفات تعريف الارتباط للتحليلات',
+      desc: 'نستخدم Google Analytics فقط بعد موافقتك لفهم زيارات الموقع. لا تُرسل البيانات الشخصية من النماذج إلى التحليلات.',
+      accept: 'قبول',
+      decline: 'رفض'
     },
     cooperation: {
       heroTitle: 'اختر',

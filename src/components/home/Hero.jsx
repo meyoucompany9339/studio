@@ -46,7 +46,7 @@ export default function Hero() {
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center max-md:mt-3 max-md:gap-2">
               <Button
-                onClick={() => openContact()}
+                onClick={() => openContact({ placement: 'hero' })}
                 className="w-full sm:w-auto max-md:!py-2 max-md:!text-sm"
               >
                 {t('hero.ctaDiscuss')}
